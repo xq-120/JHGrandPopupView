@@ -1,0 +1,23 @@
+PODS:
+  - JHGrandPopupView (1.0.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - JHGrandPopupView (from `../`)
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  JHGrandPopupView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JHGrandPopupView: 9968e67f30724454d4f4d36e57ce58b71014b3eb
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 00b2f3835d94c4e9cf3c5342b5013f0e4f666519
+
+COCOAPODS: 1.11.3
