@@ -60,9 +60,9 @@ typedef NS_ENUM(NSInteger, JHGrandPopupViewAnimationType) {
 /// param completion 完成回调
 - (void)showWithCompletion:(void (^ _Nullable)(void))completion;
 
-/// 在指定view上弹出弹窗。
+/// 在指定view上弹出弹窗。传nil,该弹窗会被添加在主window上。
 /// param completion 完成回调
-- (void)showIn:(UIView * _Nonnull)view completion:(void (^ _Nullable)(void))completion;
+- (void)showIn:(UIView * _Nullable)view completion:(void (^ _Nullable)(void))completion;
 
 - (void)dismissWithCompletion:(void (^ _Nullable)(void))completion;
 

@@ -66,10 +66,13 @@
 }
 
 - (void)showWithCompletion:(void (^)(void))completion {
-    [self showIn:UIApplication.sharedApplication.delegate.window completion:completion];
+    [self showIn:nil completion:completion];
 }
 
 - (void)showIn:(UIView *)view completion:(void (^)(void))completion {
+    if (view == nil) {
+        view = UIApplication.sharedApplication.delegate.window;
+    }
     if (CGRectEqualToRect(self.frame, CGRectZero)) {
         self.frame = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height);
     }
