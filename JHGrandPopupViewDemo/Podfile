@@ -5,7 +5,7 @@ use_frameworks!
 
 target 'JHGrandPopupViewDemo' do
 
-pod 'JHGrandPopupView', '~> 1.0.1'
+pod 'JHGrandPopupView', '~> 1.0.2'
 pod 'SnapKit', '~> 5.0.0'
 
 end
