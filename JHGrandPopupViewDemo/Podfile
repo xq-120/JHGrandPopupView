@@ -3,7 +3,7 @@
 platform :ios, '10.0'
 use_frameworks!
 
-target 'JHGrandPopupViewDemo' do
+target 'JHGrandPopupViewDemo' do  
 
 pod 'JHGrandPopupView', '~> 1.0.2'
 pod 'SnapKit', '~> 5.0.0'
