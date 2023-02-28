@@ -51,7 +51,8 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
         item1.actionBlk = { [weak self] in
             guard let self = self else {return}
             let popupView = BroadcastBeginAlertView.init()
-            popupView.show(in: self.tabBarController!.view, completion: nil)
+//            popupView.show(in: self.tabBarController!.view, completion: nil)
+            popupView.show(in: self.tabBarController!.view, animated: false, completion: nil)
         }
         dataList.append(item1)
         

@@ -117,7 +117,8 @@ class BroadcastBeginAlertView: JHGrandPopupView {
     }
     
     @objc func closeBtnDidClicked(sender: UIButton) {
-        dismiss(completion: self.closeBtnDidClickedBlk)
+//        dismiss(completion: self.closeBtnDidClickedBlk)
+        dismissWith(animated: false, completion: self.closeBtnDidClickedBlk)
     }
     
     @objc func sureBtnDidClicked(sender: UIButton) {

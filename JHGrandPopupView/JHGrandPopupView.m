@@ -70,6 +70,10 @@
 }
 
 - (void)showIn:(UIView *)view completion:(void (^)(void))completion {
+    [self showIn:view animated:YES completion:completion];
+}
+
+- (void)showIn:(UIView *)view animated:(BOOL)animated completion:(void (^)(void))completion {
     if (view == nil) {
         view = UIApplication.sharedApplication.delegate.window;
     }
@@ -78,11 +82,26 @@
     }
     [view addSubview:self];
     
+    if (!animated) {
+        completion == nil ? nil : completion();
+        return;
+    }
     id <JHGrandPopupAnimationProtocol> animatorObj = [self animator];
     [animatorObj animateInWithPopupView:self willAnimate:nil didAnimate:completion];
 }
 
 - (void)dismissWithCompletion:(void (^)(void))completion {
+    [self dismissWithAnimated:YES completion:completion];
+}
+
+- (void)dismissWithAnimated:(BOOL)animated completion:(void (^)(void))completion {
+    if (!animated) {
+        [self removeFromSuperview];
+        if (completion) {
+            completion();
+        }
+        return;
+    }
     id <JHGrandPopupAnimationProtocol> animatorObj = [self animator];
     [animatorObj animateOutWithPopupView:self willAnimate:nil didAnimate:^{
         [self removeFromSuperview];
