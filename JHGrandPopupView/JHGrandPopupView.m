@@ -19,11 +19,7 @@
 @implementation JHGrandPopupView
 
 - (instancetype)init {
-    self = [super initWithFrame:CGRectZero];
-    if (self) {
-        [self _commonInit];
-    }
-    return self;
+    return [self initWithFrame:CGRectZero];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {

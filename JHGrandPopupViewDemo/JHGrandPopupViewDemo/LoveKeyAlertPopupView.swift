@@ -60,8 +60,8 @@ class LoveKeyAlertPopupView: JHGrandPopupView {
     
     public var okBtnActionBlk: (() -> Void)?
 
-    override init() {
-        super.init()
+    init() {
+        super.init(frame: .zero)
         
         contentView.addSubview(closeBtn)
         contentView.addSubview(containerView)

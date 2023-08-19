@@ -75,8 +75,8 @@ class AuditionEndBuyAlertView: JHGrandPopupView  {
     @objc var buyBtnDidClickedBlk: (() -> Void)?
     @objc var closeBtnDidClickedBlk: (() -> Void)?
     
-    override init() {
-        super.init()
+    init() {
+        super.init(frame: .zero)
         initialSubviews()
         makeSubviewsConstraints()
     }

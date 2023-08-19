@@ -40,13 +40,8 @@ typedef NS_ENUM(NSInteger, JHGrandPopupViewAnimationType) {
 
 /// 初始化方法
 ///
-/// 弹窗大小指定为frame，frame为zero时，效果同init。
+/// 弹窗大小指定为frame，frame为zero时，弹窗大小为父视图大小。
 - (nonnull instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER;
-
-/// 初始化方法
-///
-/// 弹窗大小自适应为父视图大小。
-- (nonnull instancetype)init NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;
 

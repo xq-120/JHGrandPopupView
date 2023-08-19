@@ -72,8 +72,8 @@ class SupportGroupVoteAlertView: JHGrandPopupView, UICollectionViewDelegateFlowL
     
     @objc var confirmBtnDidClickedBlk: ((JKInterActiveGroupVipUserModel?) -> Void)?
     
-    override init() {
-        super.init()
+    init() {
+        super.init(frame: .zero)
         
         initializeSubviews()
         makeSubviewContraints()

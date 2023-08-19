@@ -77,8 +77,8 @@ class PublishCommentAlertView: JHGrandPopupView {
         return textView
     }()
     
-    override init() {
-        super.init()
+    init() {
+        super.init(frame: .zero)
         self.animationType = .present
         initialSubviews()
         makeSubviewsConstraints()

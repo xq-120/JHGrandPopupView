@@ -98,8 +98,8 @@ class BroadcastBeginAlertView: JHGrandPopupView {
         
     }
     
-    override init() {
-        super.init()
+    init() {
+        super.init(frame: .zero)
         self.shouldDismissOnTouchBackView = true
         initialSubviews()
         makeSubviewsConstraints()
