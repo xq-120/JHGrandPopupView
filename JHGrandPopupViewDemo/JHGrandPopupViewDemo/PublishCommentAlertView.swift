@@ -79,7 +79,7 @@ class PublishCommentAlertView: JHGrandPopupView {
     
     init() {
         super.init(frame: .zero)
-        self.animationType = .present
+        self.animator = JHGrandPopupPresentAnimation()
         initialSubviews()
         makeSubviewsConstraints()
         

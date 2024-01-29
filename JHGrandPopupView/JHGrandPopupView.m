@@ -31,6 +31,8 @@
 }
 
 - (void)_commonInit {
+    self.animator = JHGrandPopupFadeAnimation.new;
+    
     self.backgroundColor = [UIColor clearColor];
     _backViewBackgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
     _shouldDismissOnTouchBackView = NO;
@@ -44,21 +46,6 @@
     [NSLayoutConstraint constraintWithItem:self.backView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTrailing multiplier:1 constant:0].active = true;
     [NSLayoutConstraint constraintWithItem:self.backView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0].active = true;
     [NSLayoutConstraint constraintWithItem:self.backView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0].active = true;
-}
-
-- (id<JHGrandPopupAnimationProtocol>)animator {
-    id <JHGrandPopupAnimationProtocol> animatorObj = nil;
-    switch (self.animationType) {
-        case JHGrandPopupViewAnimationTypeFade:
-            animatorObj = JHGrandPopupFadeAnimation.new;
-            break;
-        case JHGrandPopupViewAnimationTypePresent:
-            animatorObj = JHGrandPopupPresentAnimation.new;
-            break;
-        default:
-            break;
-    }
-    return animatorObj;
 }
 
 - (void)showWithCompletion:(void (^)(void))completion {
@@ -82,8 +69,7 @@
         completion == nil ? nil : completion();
         return;
     }
-    id <JHGrandPopupAnimationProtocol> animatorObj = [self animator];
-    [animatorObj animateInWithPopupView:self willAnimate:nil didAnimate:completion];
+    [self.animator animateInWithPopupView:self willAnimate:nil didAnimate:completion];
 }
 
 - (void)dismissWithCompletion:(void (^)(void))completion {
@@ -98,8 +84,7 @@
         }
         return;
     }
-    id <JHGrandPopupAnimationProtocol> animatorObj = [self animator];
-    [animatorObj animateOutWithPopupView:self willAnimate:nil didAnimate:^{
+    [self.animator animateOutWithPopupView:self willAnimate:nil didAnimate:^{
         [self removeFromSuperview];
         if (completion) {
             completion();

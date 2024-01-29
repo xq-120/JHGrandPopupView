@@ -77,16 +77,13 @@ class AuditionEndBuyAlertView: JHGrandPopupView  {
     
     init() {
         super.init(frame: .zero)
+        self.animator = GrandPopupSlideAnimation.init()
         initialSubviews()
         makeSubviewsConstraints()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func animator() -> JHGrandPopupAnimationProtocol {
-        return GrandPopupSlideAnimation.init()
     }
     
     @objc func closeBtnDidClicked(sender: UIButton) -> Void {

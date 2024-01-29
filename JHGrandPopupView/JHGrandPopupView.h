@@ -19,11 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-typedef NS_ENUM(NSInteger, JHGrandPopupViewAnimationType) {
-    JHGrandPopupViewAnimationTypeFade = 0,
-    JHGrandPopupViewAnimationTypePresent = 1,
-};
-
 @interface JHGrandPopupView : UIView
 
 @property (nonatomic, strong) UIColor * _Nonnull backViewBackgroundColor;
@@ -36,7 +31,8 @@ typedef NS_ENUM(NSInteger, JHGrandPopupViewAnimationType) {
 /// 在设置从左到右，从上到下的约束后，contentView的size是无需指定的。everything is self-adaptive。
 @property (nonatomic, readonly, strong) UIView * _Nonnull contentView;
 
-@property (nonatomic, assign) JHGrandPopupViewAnimationType animationType;
+/// 弹窗出现消失动画。默认为FadeAnimation,可自定义。
+@property (nonatomic, strong) id<JHGrandPopupAnimationProtocol> animator;
 
 /// 初始化方法
 ///
@@ -44,11 +40,6 @@ typedef NS_ENUM(NSInteger, JHGrandPopupViewAnimationType) {
 - (nonnull instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;
-
-/// 弹窗出现消失动画。
-/// 子类可重写该方法返回一个自定义的动画。
-/// returns: 动画执行者
-- (id <JHGrandPopupAnimationProtocol> _Nonnull)animator;
 
 /// 弹出弹窗。
 /// 该弹窗会被添加在主window上。
