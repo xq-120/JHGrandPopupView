@@ -48,6 +48,11 @@
     [NSLayoutConstraint constraintWithItem:self.backView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0].active = true;
 }
 
+- (void)setBackViewBackgroundColor:(UIColor *)backViewBackgroundColor {
+    _backViewBackgroundColor = backViewBackgroundColor;
+    self.backView.backgroundColor = backViewBackgroundColor;
+}
+
 - (void)showWithCompletion:(void (^)(void))completion {
     [self showIn:nil completion:completion];
 }
@@ -94,7 +99,9 @@
 
 - (void)backViewDidClicked:(id)sender {
     if (self.shouldDismissOnTouchBackView) {
-        [self dismissWithCompletion:self.onTouchBackViewActionBlk];
+        [self dismissWithCompletion:nil];
+    } else if (self.onTouchBackViewActionBlk) {
+        self.onTouchBackViewActionBlk();
     }
 }
 
