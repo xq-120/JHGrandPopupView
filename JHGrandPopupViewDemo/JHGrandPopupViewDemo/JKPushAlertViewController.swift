@@ -104,7 +104,7 @@ class JKPushAlertViewController: JHGrandPopupViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        super.viewDidDisappear(animated)
     }
     
     @objc func closeBtnDidClicked(sender: UIButton) -> Void {
