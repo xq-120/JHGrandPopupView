@@ -9,6 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// 弹窗为UIViewController
 @interface JHGrandPopupViewController : UIViewController
 
 @property (nonatomic, strong, readonly) UIView *backView;
