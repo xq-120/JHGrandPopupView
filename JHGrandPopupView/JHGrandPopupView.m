@@ -77,11 +77,11 @@
     [self.animator animateInWithPopupView:self willAnimate:nil didAnimate:completion];
 }
 
-- (void)dismissWithCompletion:(void (^)(void))completion {
-    [self dismissWithAnimated:YES completion:completion];
+- (void)hiddenWithCompletion:(void (^)(void))completion {
+    [self hiddenWithAnimated:YES completion:completion];
 }
 
-- (void)dismissWithAnimated:(BOOL)animated completion:(void (^)(void))completion {
+- (void)hiddenWithAnimated:(BOOL)animated completion:(void (^)(void))completion {
     if (!animated) {
         [self removeFromSuperview];
         if (completion) {
@@ -99,7 +99,7 @@
 
 - (void)backViewDidClicked:(id)sender {
     if (self.shouldDismissOnTouchBackView) {
-        [self dismissWithCompletion:nil];
+        [self hiddenWithCompletion:self.onTouchBackViewActionBlk];
     } else if (self.onTouchBackViewActionBlk) {
         self.onTouchBackViewActionBlk();
     }

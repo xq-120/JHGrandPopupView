@@ -1,15 +1,18 @@
 //
-//  BroadcastBeginAlertViewController.swift
-//  GrandPopupViewDemo
+//  JKBroadcastBeginAlertViewController.swift
+//  DemonSwift
 //
-//  Created by xq on 2022/7/13.
+//  Created by jekyttt on 2019/5/28.
+//  Copyright © 2019 jekyttt. All rights reserved.
 //
 
 import UIKit
 import JHGrandPopupView
-import SnapKit
 
-class BroadcastBeginAlertView: JHGrandPopupView {
+/**
+ 宽度固定，高度自适应弹窗
+ */
+class JKBroadcastBeginAlertViewController: JHGrandPopupViewController {
 
     @objc lazy var titleLabel: UILabel = {
         let label = UILabel.init()
@@ -98,18 +101,24 @@ class BroadcastBeginAlertView: JHGrandPopupView {
         
     }
     
-    init() {
-        super.init(frame: .zero)
+    override init() {
+        super.init()
         self.shouldDismissOnTouchBackView = true
-        initialSubviews()
-        makeSubviewsConstraints()
-        configureAlert()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        initialSubviews()
+        makeSubviewsConstraints()
+        
+        configureAlert()
+    }
+    
     @objc func configureAlert() -> Void {
         avatarImageView.image = UIImage.init(named: "private_expert_no_data_icon")
         nameLabel.text = "李永乐"
@@ -117,17 +126,19 @@ class BroadcastBeginAlertView: JHGrandPopupView {
     }
     
     @objc func closeBtnDidClicked(sender: UIButton) {
-//        dismiss(completion: self.closeBtnDidClickedBlk)
-        hiddenWith(animated: false, completion: self.closeBtnDidClickedBlk)
+        self.hidden()
     }
     
     @objc func sureBtnDidClicked(sender: UIButton) {
-        hidden(completion: self.sureBtnDidClickedBlk)
+        self.sureBtnDidClickedBlk?()
     }
     
     @objc private func cancelBtnDidClicked(sender: UIButton) {
-        hidden(completion: self.cancelBtnDidClickedBlk)
+        self.hiddenWith(animated: true) { [weak self] in
+            self?.cancelBtnDidClickedBlk?()
+        }
     }
+    
     
     func initialSubviews() {
         contentView.backgroundColor = UIColor.white
@@ -147,7 +158,7 @@ class BroadcastBeginAlertView: JHGrandPopupView {
     
     func makeSubviewsConstraints() {
         contentView.snp.makeConstraints { (maker) in
-            maker.center.equalTo(self)
+            maker.center.equalTo(view)
             maker.width.equalTo(254)
         }
         
@@ -207,5 +218,5 @@ class BroadcastBeginAlertView: JHGrandPopupView {
             maker.height.equalTo(40)
         }
     }
-
 }
+

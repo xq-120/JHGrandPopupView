@@ -57,13 +57,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showIn:(UIView * _Nullable)view animated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
 
 /// animated:YES
-- (void)dismissWithCompletion:(void (^ _Nullable)(void))completion;
+- (void)hiddenWithCompletion:(void (^ _Nullable)(void))completion;
 
 /// 关闭弹窗
 /// - Parameters:
 ///   - animated: 是否动画
 ///   - completion: 关闭完成回调
-- (void)dismissWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
+- (void)hiddenWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
 
 @end
 

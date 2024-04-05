@@ -29,6 +29,10 @@
 		8F59F829291A51A400CB1390 /* UIView+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59F821291A51A400CB1390 /* UIView+Corner.swift */; };
 		8F59F82A291A51A400CB1390 /* UIViewController+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59F822291A51A400CB1390 /* UIViewController+TopViewController.swift */; };
 		8F59F82B291A51A400CB1390 /* PublishCommentAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59F823291A51A400CB1390 /* PublishCommentAlertView.swift */; };
+		8F9A05F92BBFBF21008CF631 /* JKBroadcastBeginAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A05F82BBFBF21008CF631 /* JKBroadcastBeginAlertViewController.swift */; };
+		8F9A05FB2BBFC139008CF631 /* JKPublishCommentAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A05FA2BBFC139008CF631 /* JKPublishCommentAlertViewController.swift */; };
+		8F9A05FD2BBFC3C3008CF631 /* JKSupportGroupVoteAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A05FC2BBFC3C2008CF631 /* JKSupportGroupVoteAlertViewController.swift */; };
+		8F9A05FF2BBFC531008CF631 /* JKPushAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A05FE2BBFC531008CF631 /* JKPushAlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +64,10 @@
 		8F59F821291A51A400CB1390 /* UIView+Corner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Corner.swift"; sourceTree = "<group>"; };
 		8F59F822291A51A400CB1390 /* UIViewController+TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopViewController.swift"; sourceTree = "<group>"; };
 		8F59F823291A51A400CB1390 /* PublishCommentAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishCommentAlertView.swift; sourceTree = "<group>"; };
+		8F9A05F82BBFBF21008CF631 /* JKBroadcastBeginAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKBroadcastBeginAlertViewController.swift; sourceTree = "<group>"; };
+		8F9A05FA2BBFC139008CF631 /* JKPublishCommentAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKPublishCommentAlertViewController.swift; sourceTree = "<group>"; };
+		8F9A05FC2BBFC3C2008CF631 /* JKSupportGroupVoteAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKSupportGroupVoteAlertViewController.swift; sourceTree = "<group>"; };
+		8F9A05FE2BBFC531008CF631 /* JKPushAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKPushAlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,10 @@
 				8F59F80B291A50AE00CB1390 /* FDEItemModel.swift */,
 				8F59F81A291A518D00CB1390 /* JKInterActiveGroupVipUserModel.h */,
 				8F59F819291A518D00CB1390 /* JKInterActiveGroupVipUserModel.m */,
+				8F9A05FE2BBFC531008CF631 /* JKPushAlertViewController.swift */,
+				8F9A05FC2BBFC3C2008CF631 /* JKSupportGroupVoteAlertViewController.swift */,
+				8F9A05FA2BBFC139008CF631 /* JKPublishCommentAlertViewController.swift */,
+				8F9A05F82BBFBF21008CF631 /* JKBroadcastBeginAlertViewController.swift */,
 				8F59F81E291A51A400CB1390 /* AuditionEndBuyAlertView.swift */,
 				8F59F81F291A51A400CB1390 /* BroadcastBeginAlertView.swift */,
 				8F59F81D291A51A400CB1390 /* GrandPopupSlideAnimation.swift */,
@@ -255,11 +267,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9A05F92BBFBF21008CF631 /* JKBroadcastBeginAlertViewController.swift in Sources */,
 				8F59F800291A50AE00CB1390 /* FDEMessageViewController.swift in Sources */,
 				8F59F7FA291A50AE00CB1390 /* AppDelegate.swift in Sources */,
 				8F59F802291A50AE00CB1390 /* FDEMineViewController.swift in Sources */,
 				8F59F829291A51A400CB1390 /* UIView+Corner.swift in Sources */,
 				8F59F80A291A50AE00CB1390 /* DLog.swift in Sources */,
+				8F9A05FD2BBFC3C3008CF631 /* JKSupportGroupVoteAlertViewController.swift in Sources */,
 				8F59F82A291A51A400CB1390 /* UIViewController+TopViewController.swift in Sources */,
 				8F59F82B291A51A400CB1390 /* PublishCommentAlertView.swift in Sources */,
 				8F59F808291A50AE00CB1390 /* FDENavigationController.swift in Sources */,
@@ -267,9 +281,11 @@
 				8F59F80C291A50AE00CB1390 /* FDEItemModel.swift in Sources */,
 				8F59F826291A51A400CB1390 /* AuditionEndBuyAlertView.swift in Sources */,
 				8F59F81B291A518E00CB1390 /* JKInterActiveGroupVipUserModel.m in Sources */,
+				8F9A05FB2BBFC139008CF631 /* JKPublishCommentAlertViewController.swift in Sources */,
 				8F59F827291A51A400CB1390 /* BroadcastBeginAlertView.swift in Sources */,
 				8F59F806291A50AE00CB1390 /* FDEBaseViewController.swift in Sources */,
 				8F59F824291A51A400CB1390 /* SupportGroupVoteAlertView.swift in Sources */,
+				8F9A05FF2BBFC531008CF631 /* JKPushAlertViewController.swift in Sources */,
 				8F59F828291A51A400CB1390 /* LoveKeyAlertPopupView.swift in Sources */,
 				8F59F825291A51A400CB1390 /* GrandPopupSlideAnimation.swift in Sources */,
 				8F59F7FC291A50AE00CB1390 /* FDEHomeViewController.swift in Sources */,

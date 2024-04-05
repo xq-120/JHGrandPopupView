@@ -22,7 +22,7 @@
     
     popupView.alpha = 0;
     !willAnimate ?: willAnimate();
-    [UIView animateWithDuration:0.35 animations:^{
+    [UIView animateWithDuration:self.animateInDuration animations:^{
         popupView.alpha = 1;
         popupView.contentView.frame = toFrame;
     } completion:^(BOOL finished) {
@@ -35,7 +35,7 @@
     toFrame.origin.y = popupView.frame.size.height + popupView.contentView.frame.size.height;
 
     !willAnimate ?: willAnimate();
-    [UIView animateWithDuration:0.25 animations:^{
+    [UIView animateWithDuration:self.animateOutDuration animations:^{
         popupView.alpha = 0;
         popupView.contentView.frame = toFrame;
     } completion:^(BOOL finished) {

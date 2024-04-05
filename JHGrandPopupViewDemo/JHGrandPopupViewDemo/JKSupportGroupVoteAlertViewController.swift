@@ -9,12 +9,10 @@
 import UIKit
 import JHGrandPopupView
 
-let kScreenW = UIScreen.main.bounds.width
-
 /**
  高度自适应弹窗
  */
-class SupportGroupVoteAlertView: JHGrandPopupView, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+class JKSupportGroupVoteAlertViewController: JHGrandPopupViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     @objc lazy var titleLabel: UILabel = {
         let label = UILabel.init()
@@ -72,9 +70,19 @@ class SupportGroupVoteAlertView: JHGrandPopupView, UICollectionViewDelegateFlowL
     
     @objc var confirmBtnDidClickedBlk: ((JKInterActiveGroupVipUserModel?) -> Void)?
     
-    init() {
-        super.init(frame: .zero)
-        
+    override init() {
+        super.init()
+        self.inAnimator = nil
+        self.outAnimator = nil
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
         initializeSubviews()
         makeSubviewContraints()
         
@@ -88,17 +96,13 @@ class SupportGroupVoteAlertView: JHGrandPopupView, UICollectionViewDelegateFlowL
         self.collectionView.reloadData()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
     @objc func configure(list: [JKInterActiveGroupVipUserModel]) -> Void {
         self.dataList = list
         self.collectionView.reloadData()
     }
     
     func initializeSubviews() {
-        self.addSubview(contentView)
+        view.addSubview(contentView)
         contentView.addSubview(titleLabel)
         contentView.addSubview(collectionView)
         contentView.addSubview(footerView)
@@ -107,7 +111,7 @@ class SupportGroupVoteAlertView: JHGrandPopupView, UICollectionViewDelegateFlowL
     func makeSubviewContraints() {
         
         contentView.snp.makeConstraints { (maker) in
-            maker.leading.trailing.bottom.equalTo(self)
+            maker.leading.trailing.bottom.equalTo(self.view)
         }
         
         titleLabel.snp.makeConstraints { (maker) in
@@ -133,7 +137,6 @@ class SupportGroupVoteAlertView: JHGrandPopupView, UICollectionViewDelegateFlowL
     
     @objc func confirmBtnDidClicked(sender: Any?) -> Void {
         confirmBtnDidClickedBlk?(self.selectedItem)
-        hidden(completion: nil)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

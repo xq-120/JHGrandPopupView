@@ -7,13 +7,13 @@
 //
 
 import UIKit
-import JHGrandPopupView
 import SnapKit
+import JHGrandPopupView
 
 /**
  高度固定弹窗
  */
-class PublishCommentAlertView: JHGrandPopupView {
+class JKPublishCommentAlertViewController: JHGrandPopupViewController {
     
     lazy var lineView: UIView = {
         let view = UIView.init()
@@ -77,36 +77,33 @@ class PublishCommentAlertView: JHGrandPopupView {
         return textView
     }()
     
-    init() {
-        super.init(frame: .zero)
-        self.animator = JHGrandPopupPresentAnimation()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
         initialSubviews()
         makeSubviewsConstraints()
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         
-        DispatchQueue.main.async {
-            self.contentView.addRoundingCorners(roundedRect: self.contentView.bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize.init(width: 10, height: 10))
-        }
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        view.layoutIfNeeded() //马上计算frame.
+        contentView.addRoundingCorners(roundedRect: contentView.bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize.init(width: 10, height: 10))
+        
+        textView.becomeFirstResponder()
     }
     
     @objc func viewDidClicked(sender: UIView) -> Void {
-        
+        self.hidden()
     }
     
     @objc func cancelBtnDidClicked(sender: UIButton) {
         textView.resignFirstResponder()
-        hidden(completion: nil)
+        self.hidden()
     }
     
     @objc func sureBtnDidClicked(sender: UIButton) {
         textView.resignFirstResponder()
-        hidden {
+        self.hidden {
             DLog("text:\(self.textView.text!)")
         }
     }
@@ -116,9 +113,9 @@ class PublishCommentAlertView: JHGrandPopupView {
     }
     
     func initialSubviews() {
-        self.backgroundColor = UIColor.clear
+        view.backgroundColor = UIColor.clear
     
-        self.addSubview(contentView)
+        view.addSubview(contentView)
         contentView.addSubview(cancelBtn)
         contentView.addSubview(sureBtn)
         contentView.addSubview(titleLabel)
@@ -133,7 +130,7 @@ class PublishCommentAlertView: JHGrandPopupView {
     func makeSubviewsConstraints() {
         
         contentView.snp.makeConstraints { (maker) in
-            maker.leading.trailing.bottom.equalTo(self)
+            maker.leading.trailing.bottom.equalTo(view)
             maker.height.equalTo(266)
         }
         
@@ -189,11 +186,11 @@ class PublishCommentAlertView: JHGrandPopupView {
         let duration = userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
         
         contentView.snp.updateConstraints { (maker) in
-            maker.bottom.equalTo(self).offset(-keyboardH)
+            maker.bottom.equalTo(self.view).offset(-keyboardH)
         }
 
         UIView.animate(withDuration: duration) {
-            self.layoutIfNeeded()
+            self.view.layoutIfNeeded()
         }
     }
     
@@ -202,11 +199,11 @@ class PublishCommentAlertView: JHGrandPopupView {
         let duration = userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
         
         contentView.snp.updateConstraints { (maker) in
-            maker.bottom.equalTo(self).offset(0)
+            maker.bottom.equalTo(self.view).offset(0)
         }
         
         UIView.animate(withDuration: duration) {
-            self.layoutIfNeeded()
+            self.view.layoutIfNeeded()
         }
     }
 }

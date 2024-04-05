@@ -116,10 +116,10 @@ class LoveKeyAlertPopupView: JHGrandPopupView {
     }
     
     @objc private func closeBtnDidClicked(_ sender: UIButton) {
-        dismiss(completion: closeBtnActionBlk)
+        hidden(completion: closeBtnActionBlk)
     }
     
     @objc private func okBtnDidClicked(_ sender: UIButton) {
-        dismiss(completion: okBtnActionBlk)
+        hidden(completion: okBtnActionBlk)
     }
 }

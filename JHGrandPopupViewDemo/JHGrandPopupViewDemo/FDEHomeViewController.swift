@@ -53,7 +53,7 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
             guard let self = self else {return}
             let popupView = BroadcastBeginAlertView.init()
 //            popupView.show(in: self.tabBarController!.view, completion: nil)
-            popupView.show(in: self.tabBarController!.view, animated: false, completion: nil)
+            popupView.show(in: self.tabBarController!.view, animated: true, completion: nil)
         }
         dataList.append(item1)
         
@@ -86,6 +86,64 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
             popupView.show(in: self.tabBarController!.view, completion: nil)
         }
         dataList.append(item4)
+        
+        do {
+            let item = FDEItemModel.init()
+            item.title = "use viewcontroller-宽高固定弹窗"
+            item.actionBlk = { [weak self] in
+                guard let self = self else {return}
+                let popupView = JKPushAlertViewController.init()
+                popupView.show(in: self, isWrapInNavigationController: false, animated: true, completion: nil)
+            }
+            dataList.append(item)
+        }
+        
+        let item5 = FDEItemModel.init()
+        item5.title = "use viewcontroller-宽固定,高自适应弹窗"
+        item5.actionBlk = { [weak self] in
+            guard let self = self else {return}
+            let popupView = JKBroadcastBeginAlertViewController.init()
+            popupView.sureBtnDidClickedBlk = { [weak self] in
+                let detail = FDEDetailViewController.init()
+                detail.hidesBottomBarWhenPushed = true
+                self?.navigationController?.pushViewController(detail, animated: true)
+            }
+            popupView.show(in: self, isWrapInNavigationController: false, animated: true, completion: nil)
+        }
+        dataList.append(item5)
+        
+        let item6 = FDEItemModel.init()
+        item6.title = "use viewcontroller-宽固定,高自适应弹窗,带NavigationController"
+        item6.actionBlk = { [weak self] in
+            guard let self = self else {return}
+            let popupView = JKBroadcastBeginAlertViewController.init()
+            popupView.sureBtnDidClickedBlk = { [weak popupView] in
+                let detail = FDEDetailViewController.init()
+                detail.hidesBottomBarWhenPushed = true
+                popupView?.navigationController?.pushViewController(detail, animated: true)
+            }
+            popupView.show(in: self, isWrapInNavigationController: true, animated: true, completion: nil)
+        }
+        dataList.append(item6)
+        
+        let item7 = FDEItemModel.init()
+        item7.title = "use viewcontroller-底部文本输入弹窗"
+        item7.actionBlk = { [weak self] in
+            let popupView = JKPublishCommentAlertViewController.init()
+            popupView.show(in: self!, isWrapInNavigationController: false, animated: true)
+            popupView.textView.becomeFirstResponder()
+        }
+        dataList.append(item7)
+        
+        let item8 = FDEItemModel.init()
+        item8.title = "use viewcontroller-复杂弹窗"
+        item8.actionBlk = { [weak self] in
+            guard let self = self else {return}
+            let popupView = JKSupportGroupVoteAlertViewController.init()
+            popupView.shouldDismissOnTouchBackView = true
+            popupView.show(in: self, completion: nil)
+        }
+        dataList.append(item8)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -96,6 +154,7 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
         let item = dataList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = item.title
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 12)
         cell.selectionStyle = .none
         cell.accessoryType = .disclosureIndicator
         return cell

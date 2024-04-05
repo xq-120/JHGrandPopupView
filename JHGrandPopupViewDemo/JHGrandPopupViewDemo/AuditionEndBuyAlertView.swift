@@ -87,11 +87,11 @@ class AuditionEndBuyAlertView: JHGrandPopupView  {
     }
     
     @objc func closeBtnDidClicked(sender: UIButton) -> Void {
-        dismiss(completion: nil)
+        hidden(completion: nil)
     }
     
     @objc func confirmBtnDidClicked(sender: UIButton) -> Void {
-        dismiss(completion: buyBtnDidClickedBlk)
+        hidden(completion: buyBtnDidClickedBlk)
     }
     
     func initialSubviews() {
