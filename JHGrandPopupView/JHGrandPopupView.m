@@ -34,10 +34,8 @@
     self.animator = JHGrandPopupFadeAnimation.new;
     
     self.backgroundColor = [UIColor clearColor];
-    _backViewBackgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
     _shouldDismissOnTouchBackView = NO;
-    self.backView.backgroundColor = self.backViewBackgroundColor;
-    [self.backView addTarget:self action:@selector(backViewDidClicked:) forControlEvents:UIControlEventTouchUpInside];
+    self.backView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
     [self addSubview:self.backView];
     [self addSubview:self.contentView];
     
@@ -46,11 +44,6 @@
     [NSLayoutConstraint constraintWithItem:self.backView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTrailing multiplier:1 constant:0].active = true;
     [NSLayoutConstraint constraintWithItem:self.backView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0].active = true;
     [NSLayoutConstraint constraintWithItem:self.backView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0].active = true;
-}
-
-- (void)setBackViewBackgroundColor:(UIColor *)backViewBackgroundColor {
-    _backViewBackgroundColor = backViewBackgroundColor;
-    self.backView.backgroundColor = backViewBackgroundColor;
 }
 
 - (void)showWithCompletion:(void (^)(void))completion {
@@ -107,9 +100,11 @@
 
 - (UIButton *)backView {
     if (_backView == nil) {
-        _backView = [UIButton buttonWithType:UIButtonTypeCustom];
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [btn addTarget:self action:@selector(backViewDidClicked:) forControlEvents:UIControlEventTouchUpInside];
+        _backView = btn;
     }
-    return _backView;
+    return  _backView;
 }
 
 - (UIView *)contentView {

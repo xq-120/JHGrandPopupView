@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JHGrandPopupViewController : UIViewController
 
-@property (nonatomic, strong) UIColor * _Nonnull backViewBackgroundColor;
+@property (nonatomic, strong, readonly) UIView *backView;
 
 @property (nonatomic, assign) BOOL shouldDismissOnTouchBackView;
 
@@ -22,12 +22,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong) UIView * _Nonnull contentView;
 
 /// 弹窗出现动画。默认为FadeAnimation,可自定义。
-@property (nonatomic, strong, nullable) id<UIViewControllerAnimatedTransitioning> inAnimator;
+@property (nonatomic, strong) id<UIViewControllerAnimatedTransitioning> inAnimator;
 
 /// 弹窗消失动画。默认为FadeAnimation,可自定义。
-@property (nonatomic, strong, nullable) id<UIViewControllerAnimatedTransitioning> outAnimator;
+@property (nonatomic, strong) id<UIViewControllerAnimatedTransitioning> outAnimator;
 
 - (instancetype)init;
+
+- (instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;
 
 /// animated:YES
 - (void)showIn:(UIViewController *)viewController completion:(void (^ _Nullable)(void))completion;

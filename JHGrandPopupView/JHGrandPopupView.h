@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JHGrandPopupView : UIView
 
-@property (nonatomic, strong) UIColor * _Nonnull backViewBackgroundColor;
+@property (nonatomic, strong, readonly) UIView *backView;
 
 @property (nonatomic, assign) BOOL shouldDismissOnTouchBackView;
 

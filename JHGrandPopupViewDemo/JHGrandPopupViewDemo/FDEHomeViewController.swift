@@ -140,10 +140,32 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
         item8.actionBlk = { [weak self] in
             guard let self = self else {return}
             let popupView = JKSupportGroupVoteAlertViewController.init()
+            popupView.confirmBtnDidClickedBlk = { [weak popupView, weak self] item in
+                let detail = FDEDetailViewController.init()
+                detail.hidesBottomBarWhenPushed = true
+                self?.navigationController?.pushViewController(detail, animated: true)
+            }
             popupView.shouldDismissOnTouchBackView = true
             popupView.show(in: self, completion: nil)
         }
         dataList.append(item8)
+        
+        do {
+            let item = FDEItemModel.init()
+            item.title = "use viewcontroller-复杂弹窗,带NavigationController"
+            item.actionBlk = { [weak self] in
+                guard let self = self else {return}
+                let popupView = JKSupportGroupVoteAlertViewController.init()
+                popupView.confirmBtnDidClickedBlk = { [weak popupView] item in
+                    let detail = FDEDetailViewController.init()
+                    detail.hidesBottomBarWhenPushed = true
+                    popupView?.navigationController?.pushViewController(detail, animated: true)
+                }
+                popupView.shouldDismissOnTouchBackView = true
+                popupView.show(in: self, isWrapInNavigationController: true, animated: true)
+            }
+            dataList.append(item)
+        }
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

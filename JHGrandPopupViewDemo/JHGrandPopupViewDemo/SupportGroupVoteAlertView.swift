@@ -91,6 +91,13 @@ class SupportGroupVoteAlertView: JHGrandPopupView, UICollectionViewDelegateFlowL
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func show(in view: UIView?, animated: Bool, completion: (() -> Void)? = nil) {
+        super.show(in: view, animated: animated, completion: completion)
+        
+        layoutIfNeeded() //马上计算frame.
+        contentView.addRoundingCorners(roundedRect: contentView.bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize.init(width: 16, height: 16))
+    }
 
     @objc func configure(list: [JKInterActiveGroupVipUserModel]) -> Void {
         self.dataList = list

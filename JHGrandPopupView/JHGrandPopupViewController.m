@@ -23,7 +23,6 @@
         _shouldDismissOnTouchBackView = NO;
         _inAnimator = [[JHGrandPopupFadeAnimation alloc] initWithAnimateType:JHGrandPopupAnimateTypeAnimateIn];
         _outAnimator = [[JHGrandPopupFadeAnimation alloc] initWithAnimateType:JHGrandPopupAnimateTypeAnimateOut];
-        _backViewBackgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
     }
     return self;
 }
@@ -32,7 +31,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor clearColor];
-    self.backView.backgroundColor = _backViewBackgroundColor;
+    self.backView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
     
     [self.view addSubview:self.backView];
     [self.view addSubview:self.contentView];
@@ -42,11 +41,6 @@
     [super viewWillLayoutSubviews];
     
     self.backView.frame = self.view.frame;
-}
-
-- (void)setBackViewBackgroundColor:(UIColor *)backViewBackgroundColor {
-    _backViewBackgroundColor = backViewBackgroundColor;
-    self.backView.backgroundColor = backViewBackgroundColor;
 }
 
 - (void)showIn:(UIViewController *)viewController completion:(void (^)(void))completion {

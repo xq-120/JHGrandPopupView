@@ -72,8 +72,8 @@ class JKSupportGroupVoteAlertViewController: JHGrandPopupViewController, UIColle
     
     override init() {
         super.init()
-        self.inAnimator = nil
-        self.outAnimator = nil
+        self.inAnimator = JHGrandPopupPresentAnimation(animateType: .animateIn)
+        self.outAnimator = JHGrandPopupPresentAnimation(animateType: .animateOut)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -94,6 +94,9 @@ class JKSupportGroupVoteAlertViewController: JHGrandPopupViewController, UIColle
             self.dataList.append(item)
         }
         self.collectionView.reloadData()
+        
+        view.layoutIfNeeded() //马上计算frame.
+        contentView.addRoundingCorners(roundedRect: contentView.bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize.init(width: 16, height: 16))
     }
     
     @objc func configure(list: [JKInterActiveGroupVipUserModel]) -> Void {
