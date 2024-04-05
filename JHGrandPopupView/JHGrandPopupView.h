@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) void (^ _Nullable onTouchBackViewActionBlk)(void);
 
 /// 子类的所有子视图都应该添加在contentView上。
-/// 在设置从左到右，从上到下的约束后，contentView的size是无需指定的。everything is self-adaptive。
+/// 在设置从左到右，从上到下的约束后，contentView的size是自适应的。
 @property (nonatomic, readonly, strong) UIView * _Nonnull contentView;
 
 /// 弹窗出现消失动画。默认为FadeAnimation,可自定义。
