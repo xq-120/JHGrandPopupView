@@ -10,9 +10,12 @@
 #endif
 #endif
 
-#import "JHGrandPopupBaseAnimation.h"
-#import "JHGrandPopupFadeAnimation.h"
-#import "JHGrandPopupPresentAnimation.h"
+#import "JHGrandPopupBaseInAnimation.h"
+#import "JHGrandPopupBaseOutAnimation.h"
+#import "JHGrandPopupFadeInAnimation.h"
+#import "JHGrandPopupFadeOutAnimation.h"
+#import "JHGrandPopupPresentInAnimation.h"
+#import "JHGrandPopupPresentOutAnimation.h"
 #import "JHGrandPopupView.h"
 #import "JHGrandPopupViewController.h"
 

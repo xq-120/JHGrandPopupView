@@ -2,7 +2,7 @@
 //  JHGrandPopupView.h
 //  Pods-JHGrandPopupViewDemo
 //
-//  Created by xq on 2022/7/15.
+//  Created by xuequan on 2022/7/15.
 //
 
 #import <UIKit/UIKit.h>
@@ -13,9 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol JHGrandPopupAnimationProtocol
 
-- (void)animateInWithPopupView:(JHGrandPopupView * _Nonnull)popupView willAnimate:(void (^ _Nullable)(void))willAnimate didAnimate:(void (^ _Nullable)(void))didAnimate;
-
-- (void)animateOutWithPopupView:(JHGrandPopupView * _Nonnull)popupView willAnimate:(void (^ _Nullable)(void))willAnimate didAnimate:(void (^ _Nullable)(void))didAnimate;
+- (void)animateWithPopupView:(JHGrandPopupView * _Nonnull)popupView completion:(void (^ _Nullable)(void))completion;
 
 @end
 
@@ -32,8 +30,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 在设置从左到右，从上到下的约束后，contentView的size是自适应的。
 @property (nonatomic, readonly, strong) UIView * _Nonnull contentView;
 
-/// 弹窗出现消失动画。默认为FadeAnimation,可自定义。
-@property (nonatomic, strong) id<JHGrandPopupAnimationProtocol> animator;
+/// 弹窗出现动画。默认为FadeAnimation,可自定义。
+@property (nonatomic, strong) id<JHGrandPopupAnimationProtocol> inAnimator;
+
+/// 弹窗消失动画。默认为FadeAnimation,可自定义。
+@property (nonatomic, strong) id<JHGrandPopupAnimationProtocol> outAnimator;
 
 /// 初始化方法
 ///

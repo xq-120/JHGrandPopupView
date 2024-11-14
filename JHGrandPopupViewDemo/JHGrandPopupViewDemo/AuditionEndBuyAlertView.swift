@@ -77,7 +77,8 @@ class AuditionEndBuyAlertView: JHGrandPopupView  {
     
     init() {
         super.init(frame: .zero)
-        self.animator = GrandPopupSlideAnimation.init()
+        self.inAnimator = GrandPopupSlideInAnimation.init()
+        self.outAnimator = GrandPopupSlideOutAnimation.init()
         initialSubviews()
         makeSubviewsConstraints()
     }

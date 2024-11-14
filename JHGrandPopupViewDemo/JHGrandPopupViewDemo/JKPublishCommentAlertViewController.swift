@@ -79,8 +79,8 @@ class JKPublishCommentAlertViewController: JHGrandPopupViewController {
     
     override init() {
         super.init()
-        self.inAnimator = JHGrandPopupPresentAnimation(animateType: .animateIn)
-        self.outAnimator = JHGrandPopupPresentAnimation(animateType: .animateOut)
+        self.inAnimator = JHGrandPopupPresentInAnimation()
+        self.outAnimator = JHGrandPopupPresentOutAnimation()
     }
     
     override func viewDidLoad() {

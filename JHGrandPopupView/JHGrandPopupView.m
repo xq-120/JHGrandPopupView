@@ -2,12 +2,12 @@
 //  JHGrandPopupView.m
 //  Pods-JHGrandPopupViewDemo
 //
-//  Created by xq on 2022/7/15.
+//  Created by xuequan on 2022/7/15.
 //
 
 #import "JHGrandPopupView.h"
-#import "JHGrandPopupFadeAnimation.h"
-#import "JHGrandPopupPresentAnimation.h"
+#import "JHGrandPopupFadeInAnimation.h"
+#import "JHGrandPopupFadeOutAnimation.h"
 
 @interface JHGrandPopupView ()
 
@@ -31,7 +31,8 @@
 }
 
 - (void)_commonInit {
-    self.animator = JHGrandPopupFadeAnimation.new;
+    self.inAnimator = JHGrandPopupFadeInAnimation.new;
+    self.outAnimator = JHGrandPopupFadeOutAnimation.new;
     
     self.backgroundColor = [UIColor clearColor];
     _shouldDismissOnTouchBackView = NO;
@@ -67,7 +68,7 @@
         completion == nil ? nil : completion();
         return;
     }
-    [self.animator animateInWithPopupView:self willAnimate:nil didAnimate:completion];
+    [self.inAnimator animateWithPopupView:self completion:completion];
 }
 
 - (void)hiddenWithCompletion:(void (^)(void))completion {
@@ -82,7 +83,7 @@
         }
         return;
     }
-    [self.animator animateOutWithPopupView:self willAnimate:nil didAnimate:^{
+    [self.outAnimator animateWithPopupView:self completion:^{
         [self removeFromSuperview];
         if (completion) {
             completion();
