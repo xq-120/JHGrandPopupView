@@ -22,10 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 在设置从左到右，从上到下的约束后，contentView的size是自适应的。
 @property (nonatomic, readonly, strong) UIView * _Nonnull contentView;
 
-/// 弹窗出现动画。默认为FadeAnimation,可自定义。
+/// 弹窗出现动画。默认为FadeInAnimation,可自定义。
 @property (nonatomic, strong) id<UIViewControllerAnimatedTransitioning> inAnimator;
 
-/// 弹窗消失动画。默认为FadeAnimation,可自定义。
+/// 弹窗消失动画。默认为FadeOutAnimation,可自定义。
 @property (nonatomic, strong) id<UIViewControllerAnimatedTransitioning> outAnimator;
 
 - (instancetype)init;
