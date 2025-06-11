@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class JHGrandPopupView;
 
-@protocol JHGrandPopupAnimationProtocol
+@protocol JHGrandPopupViewAnimationProtocol
 
 - (void)animateWithPopupView:(JHGrandPopupView * _Nonnull)popupView completion:(void (^ _Nullable)(void))completion;
 
@@ -31,10 +31,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong) UIView * _Nonnull contentView;
 
 /// 弹窗出现动画。默认为FadeInAnimation,可自定义。
-@property (nonatomic, strong) id<JHGrandPopupAnimationProtocol> inAnimator;
+@property (nonatomic, strong) id<JHGrandPopupViewAnimationProtocol> inAnimator;
 
 /// 弹窗消失动画。默认为FadeOutAnimation,可自定义。
-@property (nonatomic, strong) id<JHGrandPopupAnimationProtocol> outAnimator;
+@property (nonatomic, strong) id<JHGrandPopupViewAnimationProtocol> outAnimator;
 
 /// 初始化方法
 ///

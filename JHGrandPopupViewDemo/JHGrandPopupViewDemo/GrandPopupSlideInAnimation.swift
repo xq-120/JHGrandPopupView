@@ -8,7 +8,7 @@
 import UIKit
 import JHGrandPopupView
 
-class GrandPopupSlideInAnimation: NSObject, JHGrandPopupAnimationProtocol {
+class GrandPopupSlideInAnimation: NSObject, JHGrandPopupViewAnimationProtocol {
     func animate(with popupView: JHGrandPopupView, completion: (() -> Void)?) {
         popupView.layoutIfNeeded()
         

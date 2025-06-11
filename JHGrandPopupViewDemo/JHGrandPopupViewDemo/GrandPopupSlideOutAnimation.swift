@@ -8,7 +8,7 @@
 import Foundation
 import JHGrandPopupView
 
-class GrandPopupSlideOutAnimation: NSObject, JHGrandPopupAnimationProtocol {
+class GrandPopupSlideOutAnimation: NSObject, JHGrandPopupViewAnimationProtocol {
     func animate(with popupView: JHGrandPopupView, completion: (() -> Void)?) {
         var toFrame = popupView.contentView.frame
         toFrame.origin.y = popupView.frame.size.height + popupView.contentView.frame.size.height
