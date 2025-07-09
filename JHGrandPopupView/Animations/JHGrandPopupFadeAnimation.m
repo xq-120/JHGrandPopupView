@@ -1,43 +1,40 @@
 //
-//  JHGrandPopupPresentAnimation.m
+//  JHGrandPopupFadeAnimation.m
 //  Pods-JHGrandPopupViewDemo
 //
 //  Created by xuequan on 2022/7/16.
 //
 
-#import "JHGrandPopupPresentAnimation.h"
-#import "JHGrandPopupViewController.h"
+#import "JHGrandPopupFadeAnimation.h"
+#import <UIKit/UIKit.h>
 
-@implementation JHGrandPopupPresentAnimation
+@implementation JHGrandPopupFadeAnimation
 
 - (void)animateInWithPopupView:(JHGrandPopupView * _Nonnull)popupView completion:(void (^ _Nullable)(void))completion {
-    [popupView layoutIfNeeded];
-    
-    CGRect currentFrame = popupView.contentView.frame;
-    
-    CGRect fromFrame = currentFrame;
-    fromFrame.origin.y = popupView.frame.size.height + popupView.contentView.frame.size.height;
-    popupView.contentView.frame = fromFrame;
-    
-    CGRect toFrame = currentFrame;
-    
     popupView.alpha = 0;
-    
-    [UIView animateWithDuration:self.animateInDuration animations:^{
+    if (!self.disableAnimateInZoom) {
+        popupView.contentView.transform = CGAffineTransformMakeScale(0.6f, 0.6f);
+    }
+    [UIView animateWithDuration:self.animateInDuration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         popupView.alpha = 1;
-        popupView.contentView.frame = toFrame;
+        if (!self.disableAnimateInZoom) {
+            popupView.contentView.transform = CGAffineTransformIdentity;
+        }
     } completion:^(BOOL finished) {
         !completion ?: completion();
     }];
 }
 
 - (void)animateOutWithPopupView:(JHGrandPopupView * _Nonnull)popupView completion:(void (^ _Nullable)(void))completion {
-    CGRect toFrame = popupView.contentView.frame;
-    toFrame.origin.y = popupView.frame.size.height + popupView.contentView.frame.size.height;
-    
-    [UIView animateWithDuration:self.animateOutDuration animations:^{
+    popupView.alpha = 1;
+    if (!self.disableAnimateOutZoom) {
+        popupView.contentView.transform = CGAffineTransformIdentity;
+    }
+    [UIView animateWithDuration:self.animateOutDuration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         popupView.alpha = 0;
-        popupView.contentView.frame = toFrame;
+        if (!self.disableAnimateOutZoom) {
+            popupView.contentView.transform = CGAffineTransformMakeScale(0.6f, 0.6f);
+        }
     } completion:^(BOOL finished) {
         !completion ?: completion();
     }];
@@ -56,19 +53,24 @@
     }
     
     CGRect finalFrame = [transitionContext finalFrameForViewController:toVC];
-    toVC.view.frame = finalFrame;
     UIView *containerView = transitionContext.containerView;
+    
+    toVC.view.frame = finalFrame;
+    toVC.view.alpha = 0;
+    
     [containerView addSubview:toVC.view];
     
     [contentVC.view layoutIfNeeded];
-    CGRect contentViewFrame = contentVC.contentView.frame;
-    contentVC.contentView.frame = CGRectMake(contentViewFrame.origin.x, contentViewFrame.origin.y + contentViewFrame.size.height, contentViewFrame.size.width, contentViewFrame.size.height);
-    contentVC.backView.alpha = 0;
+    if (!self.disableAnimateInZoom) {
+        contentVC.contentView.transform = CGAffineTransformMakeScale(0.6f, 0.6f);
+    }
     
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     [UIView animateWithDuration:duration animations:^{
-        contentVC.backView.alpha = 1;
-        contentVC.contentView.frame = contentViewFrame;
+        toVC.view.alpha = 1;
+        if (!self.disableAnimateInZoom) {
+            contentVC.contentView.transform = CGAffineTransformIdentity;
+        }
     } completion:^(BOOL finished) {
         [transitionContext completeTransition:finished];
     }];
@@ -86,13 +88,17 @@
         return;
     }
     
-    CGRect contentViewFrame = contentVC.contentView.frame;
-    contentVC.backView.alpha = 1;
-    
+    fromVC.view.alpha = 1;
+    if (!self.disableAnimateOutZoom) {
+        contentVC.contentView.transform = CGAffineTransformIdentity;
+    }
+
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     [UIView animateWithDuration:duration animations:^{
-        contentVC.backView.alpha = 0;
-        contentVC.contentView.frame = CGRectMake(contentViewFrame.origin.x, contentViewFrame.origin.y + contentViewFrame.size.height, contentViewFrame.size.width, contentViewFrame.size.height);
+        fromVC.view.alpha = 0;
+        if (!self.disableAnimateOutZoom) {
+            contentVC.contentView.transform = CGAffineTransformMakeScale(0.6f, 0.6f);
+        }
     } completion:^(BOOL finished) {
         [transitionContext completeTransition:finished];
     }];

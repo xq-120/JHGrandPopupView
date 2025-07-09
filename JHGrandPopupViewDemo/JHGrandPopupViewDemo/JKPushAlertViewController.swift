@@ -10,8 +10,8 @@ import UIKit
 import UserNotifications
 import JHGrandPopupView
 
-private let kPushAlertViewWidth: CGFloat = 234.0
-private let kPushAlertViewHeight: CGFloat = 264.0
+private let kPushAlertViewWidth: CGFloat = 300
+private let kPushAlertViewHeight: CGFloat = 300
 
 class JKPushAlertViewController: JHGrandPopupViewController {
 
@@ -67,6 +67,12 @@ class JKPushAlertViewController: JHGrandPopupViewController {
         return imageView
     }()
     
+    lazy var containerView: UIView = {
+        let v = UIView.init()
+        v.backgroundColor = .white
+        return v
+    }()
+    
     @objc var confirmBtnDidClickedBlk: (() -> Void)?
     @objc var closeBtnDidClickedBlk: (() -> Void)?
     
@@ -115,27 +121,37 @@ class JKPushAlertViewController: JHGrandPopupViewController {
         if self.confirmBtnDidClickedBlk != nil {
             self.confirmBtnDidClickedBlk?()
         } else {
-            let settingsUrl = URL.init(string: UIApplication.openSettingsURLString)
-            if settingsUrl != nil && UIApplication.shared.canOpenURL(settingsUrl!) {
-                UIApplication.shared.open(settingsUrl!, completionHandler: nil)
+            self.hiddenWith(animated: true) {
+                let settingsUrl = URL.init(string: UIApplication.openSettingsURLString)
+                if settingsUrl != nil && UIApplication.shared.canOpenURL(settingsUrl!) {
+                    UIApplication.shared.open(settingsUrl!, completionHandler: nil)
+                }
             }
         }
     }
     
     func initialSubviews() {
-        contentView.backgroundColor = UIColor.white
-        contentView.layer.cornerRadius = 6
+        contentView.backgroundColor = .clear
+        containerView.layer.cornerRadius = 12
+        containerView.layer.masksToBounds = true
         
-        contentView.addSubview(lightRedBgView)
+        contentView.addSubview(containerView)
         contentView.addSubview(bgImageView)
-        contentView.addSubview(closeBtn)
-        contentView.addSubview(titleLabel)
-        contentView.addSubview(detailLabel)
-        contentView.addSubview(confirmBtn)
+        
+        containerView.addSubview(lightRedBgView)
+        containerView.addSubview(closeBtn)
+        containerView.addSubview(titleLabel)
+        containerView.addSubview(detailLabel)
+        containerView.addSubview(confirmBtn)
     }
     
     func makeSubviewsConstraints() {
         contentView.snp.makeConstraints { (maker) in
+            maker.center.equalTo(self.view)
+            maker.size.equalTo(CGSize.init(width: kPushAlertViewWidth, height: kPushAlertViewHeight))
+        }
+        
+        containerView.snp.makeConstraints { (maker) in
             maker.center.equalTo(self.view)
             maker.size.equalTo(CGSize.init(width: kPushAlertViewWidth, height: kPushAlertViewHeight))
         }

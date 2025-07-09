@@ -93,6 +93,9 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
             item.actionBlk = { [weak self] in
                 guard let self = self else {return}
                 let popupView = JKPushAlertViewController.init()
+                let animator = JHGrandPopupFadeAnimation()
+                animator.disableAnimateOutZoom = true
+                popupView.animator = animator
                 popupView.show(in: self, isWrapInNavigationController: false, animated: true, completion: nil)
             }
             dataList.append(item)

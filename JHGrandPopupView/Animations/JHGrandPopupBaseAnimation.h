@@ -17,8 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSTimeInterval animateOutDuration;
 
-@property (nonatomic, assign) NSInteger popupType;
-
 @property (nonatomic, assign) JHGrandPopupAnimateDirectionType directionType;
 
 - (void)animateInWithTransitionContext:(id<UIViewControllerContextTransitioning>)transitionContext;

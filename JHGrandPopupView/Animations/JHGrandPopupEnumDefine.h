@@ -10,7 +10,7 @@
 
 typedef NS_ENUM(NSInteger, JHGrandPopupAnimateDirectionType) {
     JHGrandPopupAnimateDirectionIn = 0,
-    JHGrandPopupAnimateDirectionOut = 0,
+    JHGrandPopupAnimateDirectionOut = 1,
 };
 
 #endif /* JHGrandPopupEnumDefine_h */

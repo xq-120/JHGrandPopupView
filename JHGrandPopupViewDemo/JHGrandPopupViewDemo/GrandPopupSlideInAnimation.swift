@@ -8,7 +8,22 @@
 import UIKit
 import JHGrandPopupView
 
-class GrandPopupSlideAnimation: NSObject, JHGrandPopupViewAnimationProtocol {
+class GrandPopupSlideAnimation: NSObject, JHGrandPopupViewAnimationProtocol, JHGrandPopupViewControllerAnimationProtocol {
+    
+    func transitionDuration(using transitionContext: (any UIViewControllerContextTransitioning)?) -> TimeInterval {
+        return 0.25
+    }
+    
+    func animateTransition(using transitionContext: any UIViewControllerContextTransitioning) {
+        if directionType == .in {
+            
+        } else {
+            
+        }
+    }
+    
+    var directionType: JHGrandPopupAnimateDirectionType = .in
+    
     func animateIn(with popupView: JHGrandPopupView, completion: (() -> Void)?) {
         popupView.layoutIfNeeded()
         
