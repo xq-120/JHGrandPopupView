@@ -7,12 +7,23 @@
 
 #import <Foundation/Foundation.h>
 #import "JHGrandPopupView.h"
+#import "JHGrandPopupViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JHGrandPopupBaseAnimation : NSObject <JHGrandPopupViewAnimationProtocol, UIViewControllerAnimatedTransitioning>
+@interface JHGrandPopupBaseAnimation : NSObject <JHGrandPopupViewAnimationProtocol, JHGrandPopupViewControllerAnimationProtocol>
 
-@property (nonatomic, assign) NSTimeInterval animateDuration;
+@property (nonatomic, assign) NSTimeInterval animateInDuration;
+
+@property (nonatomic, assign) NSTimeInterval animateOutDuration;
+
+@property (nonatomic, assign) NSInteger popupType;
+
+@property (nonatomic, assign) JHGrandPopupAnimateDirectionType directionType;
+
+- (void)animateInWithTransitionContext:(id<UIViewControllerContextTransitioning>)transitionContext;
+
+- (void)animateOutWithTransitionContext:(id<UIViewControllerContextTransitioning>)transitionContext;
 
 @end
 

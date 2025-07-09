@@ -72,8 +72,7 @@ class JKSupportGroupVoteAlertViewController: JHGrandPopupViewController, UIColle
     
     override init() {
         super.init()
-        self.inAnimator = JHGrandPopupPresentInAnimation()
-        self.outAnimator = JHGrandPopupPresentOutAnimation()
+        self.animator = JHGrandPopupPresentAnimation()
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -82,8 +82,7 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
             guard let self = self else {return}
             let popupView = SupportGroupVoteAlertView.init()
             popupView.shouldDismissOnTouchBackView = true
-            popupView.inAnimator = JHGrandPopupPresentInAnimation.init()
-            popupView.outAnimator = JHGrandPopupPresentOutAnimation.init()
+            popupView.animator = JHGrandPopupPresentAnimation.init()
             popupView.show(in: self.tabBarController!.view, completion: nil)
         }
         dataList.append(item4)

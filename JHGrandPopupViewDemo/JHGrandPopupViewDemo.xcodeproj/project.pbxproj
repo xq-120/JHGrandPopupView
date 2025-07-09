@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35A10E912CE5CC2400FB59CB /* GrandPopupSlideOutAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A10E902CE5CC2400FB59CB /* GrandPopupSlideOutAnimation.swift */; };
 		539D1FCB34CACC677D5EE865 /* Pods_JHGrandPopupViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4424579813BC3D77374D05A0 /* Pods_JHGrandPopupViewDemo.framework */; };
 		8F59F7FA291A50AE00CB1390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59F7F9291A50AE00CB1390 /* AppDelegate.swift */; };
 		8F59F7FC291A50AE00CB1390 /* FDEHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59F7FB291A50AE00CB1390 /* FDEHomeViewController.swift */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		10EC91565A0F291041A38C04 /* Pods-JHGrandPopupViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHGrandPopupViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-JHGrandPopupViewDemo/Pods-JHGrandPopupViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		35A10E902CE5CC2400FB59CB /* GrandPopupSlideOutAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandPopupSlideOutAnimation.swift; sourceTree = "<group>"; };
 		4424579813BC3D77374D05A0 /* Pods_JHGrandPopupViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHGrandPopupViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A1782E6A350488955E054E /* Pods-JHGrandPopupViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHGrandPopupViewDemo.release.xcconfig"; path = "Target Support Files/Pods-JHGrandPopupViewDemo/Pods-JHGrandPopupViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8F59F7F6291A50AE00CB1390 /* JHGrandPopupViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHGrandPopupViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +139,6 @@
 				8F59F81E291A51A400CB1390 /* AuditionEndBuyAlertView.swift */,
 				8F59F81F291A51A400CB1390 /* BroadcastBeginAlertView.swift */,
 				8F59F81D291A51A400CB1390 /* GrandPopupSlideInAnimation.swift */,
-				35A10E902CE5CC2400FB59CB /* GrandPopupSlideOutAnimation.swift */,
 				8F59F820291A51A400CB1390 /* LoveKeyAlertPopupView.swift */,
 				8F59F823291A51A400CB1390 /* PublishCommentAlertView.swift */,
 				8F59F81C291A51A400CB1390 /* SupportGroupVoteAlertView.swift */,
@@ -277,7 +274,6 @@
 				8F59F829291A51A400CB1390 /* UIView+Corner.swift in Sources */,
 				8F59F80A291A50AE00CB1390 /* DLog.swift in Sources */,
 				8F9A05FD2BBFC3C3008CF631 /* JKSupportGroupVoteAlertViewController.swift in Sources */,
-				35A10E912CE5CC2400FB59CB /* GrandPopupSlideOutAnimation.swift in Sources */,
 				8F59F82A291A51A400CB1390 /* UIViewController+TopViewController.swift in Sources */,
 				8F59F82B291A51A400CB1390 /* PublishCommentAlertView.swift in Sources */,
 				8F59F808291A50AE00CB1390 /* FDENavigationController.swift in Sources */,

@@ -8,61 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		01EEAD72CA9BBE598E69847AD499825E /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */; };
-		0996C526F9CEE31AB1F241172E1D8F7F /* JHGrandPopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2836EAF98686E721C370BE4E98F2CD7 /* JHGrandPopupView-dummy.m */; };
+		0214211330D207EBFA1B28A98A6DAAB8 /* JHGrandPopupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 078BF127F0E551093C882DED934B7F9E /* JHGrandPopupViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B0A9F2A46982616C65AE2AB789AE925 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */; };
 		0DC6A4EA61549FAA4D67C638F4912449 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */; };
-		11F0FA824FCA15E1743CC42EA69EF6DB /* JHGrandPopupView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CF3BC82B5C5733CA07503592529188 /* JHGrandPopupView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		129130C0BB3D418E0DC0FF11C6F12D61 /* JHGrandPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BEA0135036699BB5B816DEDE9EB32C1 /* JHGrandPopupView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19E6837FB92DF413AC8E1DEBE0FD368D /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */; };
 		23365C31F812C3CD15B7DCDEDFB6EA81 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */; };
-		2FCB054CEB6F335B6AA30A8505E81FF8 /* JHGrandPopupFadeInAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1C50BEBDF5E554FED38F4D09403A1B /* JHGrandPopupFadeInAnimation.m */; };
 		3216AB2C3D1FB4C21792F3095B0056AE /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */; };
-		37775A285508CEF9638636C7F4EC587A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */; };
 		3A3AC985E8D868B40E79A9E298B2EC98 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */; };
-		3C4D85BDD17A69C0D2DFFD39F916BF80 /* JHGrandPopupBaseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C0BB32881BA68E1F0570CD91C07DFAEC /* JHGrandPopupBaseAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E1BA9D21EC7CB1A78C5D09C5596B5BA /* Pods-JHGrandPopupViewDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC230F5D71C6339310F9CE7F9BFCE5 /* Pods-JHGrandPopupViewDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E887DA1A04669C09DF95B2B66C9A453 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */; };
 		3EFF0FD411C76F9AFEEDE63CEAA80DDF /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */; };
 		40AEA5B4EC0DCC2292EF9FF51900CA05 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */; };
+		41362881EB61F452F8373DEC9B660549 /* JHGrandPopupPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B654BC56701D5AF23FDD62BB30144855 /* JHGrandPopupPresentAnimation.m */; };
 		480AB10036E1D7DA902DA30E4C5C5E97 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */; };
-		4CE25CEF56E649904884C2435752148F /* JHGrandPopupPresentOutAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EC76D1A0060315BDAE70A19BD7E428 /* JHGrandPopupPresentOutAnimation.m */; };
 		4EEAC3817A6D1CA8EDC90C15DA408D8B /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */; };
-		4F39512BDB668A32B7CA980FF0CC82D6 /* JHGrandPopupPresentOutAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D99FC113122F082BF457937ED41DE4 /* JHGrandPopupPresentOutAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		535653CCCA7FB794F684F4C7DD9759F7 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */; };
 		549BAC821EBDB1F0B9EA5DEBBDA645C0 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */; };
 		5CA57AA5231D8FC89D1223061B9145A5 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */; };
+		5ECD2C12E2F06A7723202663C95EC91E /* JHGrandPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0492B8933224F431680A32863F9043 /* JHGrandPopupView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6085744FBD1EF81C9E7D8CD10A53BFBC /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62679A7269F6D044A99EFED8DBBB2E8C /* JHGrandPopupFadeOutAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C76805A0A2C65EDCE3F462B051F99DCA /* JHGrandPopupFadeOutAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B642D91C6B71AFF46135FCCB99303DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		6C72046C91A1F2405F26806F5F912B90 /* JHGrandPopupPresentAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A86139138080F0AC166BC57080E17F /* JHGrandPopupPresentAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB39C6A58E507B7F63676AF197595F8 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */; };
 		6CBA046D8441B8ED42B6D6E31A34C4CD /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */; };
+		756BE4BA137872F7C21F042F3DF6EF1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */; };
+		77F996F9DB0E1F99138A69908C8422ED /* JHGrandPopupFadeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A85D2841328B4B256BE51D4D5BDC37 /* JHGrandPopupFadeAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7923C81B69D5DE0C931B48CF813ACD0E /* JHGrandPopupBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8853B4F7FAF9041A339E7B04C179E527 /* JHGrandPopupBaseAnimation.m */; };
 		825288A0405FDDD7CD82A9322B727FAF /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */; };
 		83CE530D09DAAB91AD319601C321B4E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
 		875EC107D9A448516CECD341A2FE7345 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */; };
 		89AFD69B64D92A0994F1CA37F95AF3B4 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */; };
 		89C4F0896E4850A20435584A3825BC43 /* Pods-JHGrandPopupViewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA89116506666960D3B4C0709D85C1BE /* Pods-JHGrandPopupViewDemo-dummy.m */; };
-		8B0D3ECCF62832102A03B82C08BD2FEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		8C37FCE835D64155DCEBC31A65D704F5 /* JHGrandPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8BE86A3D231FBC324379D89824987 /* JHGrandPopupViewController.m */; };
 		94911FDF75D008B9ADFC943EB26C5BF8 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */; };
+		A22AE2CACD5431C1465058919627E4AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		A3E67EC68671ABC79547316705CB6E63 /* JHGrandPopupEnumDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = EC74C0D305451A9EBFC7B44EEB8CEE33 /* JHGrandPopupEnumDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5FB126AAEE062BC7576EE9CD9412700 /* JHGrandPopupView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C22E3CB0BFAAF6965476E2A9C6D26DE /* JHGrandPopupView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6068945E10FDEA54F4A8C2A5E8DF3F9 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */; };
-		A6E21EDB3E1C2CE9FEA84528FCA2E6CA /* JHGrandPopupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BFA42BF6FC6A75AAB858E95D9E8B61 /* JHGrandPopupViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABB9B642CA5715B5E27644CC1F01143A /* JHGrandPopupPresentInAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B351ADE6580E16B1E2D0DFFDB3FA1825 /* JHGrandPopupPresentInAnimation.m */; };
 		B5B8354D3BC86A41A08B6F973D91FC68 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */; };
+		B8A36699B55238DC3026C3689EE2CA91 /* JHGrandPopupBaseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C84ECFB3383E9FC9AFF87D40E599FB6 /* JHGrandPopupBaseAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B97EDD4DE1F76ADA6B20A375A99B39ED /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */; };
+		BDD93139B3450EBA9A153DB79F8D58E6 /* JHGrandPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF69567DB5D870C4E1413896BFDD4E /* JHGrandPopupView.m */; };
 		BEA084E260B2F85E4FB84A8E7B551F7B /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */; };
-		BEEC30B929AA83737AD61304226B7B73 /* JHGrandPopupPresentInAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = A54AB62BCFF1D9CFAF57378EDD4EE2C5 /* JHGrandPopupPresentInAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF14FBA08A9A638B50D21321609DA564 /* JHGrandPopupFadeOutAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 148AB966037468024B5B1E2D3F554653 /* JHGrandPopupFadeOutAnimation.m */; };
 		C1AD8D7E07E92B87CDE29E63C17BFAFA /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */; };
-		C4A58CBE477CC3450A9616C9A34AA4D3 /* JHGrandPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDFCC1934522771D4A55EA5D7698416 /* JHGrandPopupView.m */; };
-		CDF42BE62AAC19E15DC3F7721DAFF1A0 /* JHGrandPopupFadeInAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = EAEE33FB6219095C9BE099D9951EF913 /* JHGrandPopupFadeInAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7AD46C367B33682629AC5247E4F6301 /* JHGrandPopupFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ED8DF71D6D9F044F1ED6E9A37D8716 /* JHGrandPopupFadeAnimation.m */; };
 		D0DCD2B8F491AEECAEA5D48CBAAB5018 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */; };
 		D1EE918C5DE8BEC6A78E8697B81B75B7 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */; };
 		D38181367806E4139F85E7A67CB3FE48 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */; };
+		D9F147BFD2823E329CE9C78B3D18C9C3 /* JHGrandPopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 381DB0EA7A6A79BC9FC8624915F0784C /* JHGrandPopupView-dummy.m */; };
 		DBA561E0B8D29BC99BFDE4A2955B87F5 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */; };
 		DC6264869084B3499E06650F37111D54 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */; };
-		E0039C9D5248C3E2BECA8FFC76C0C48D /* JHGrandPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB534DDF82F43F35BCC992533B620E /* JHGrandPopupViewController.m */; };
 		E15B2F4592E48D584B469F50E5972C33 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */; };
 		E517E81AA071EA3DA92AEE914A91B4C1 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */; };
-		E6D0AE32BBE8A4A29902FF91DDEF70E1 /* JHGrandPopupBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 240AFA001B8E4AB8D443A88A37114189 /* JHGrandPopupBaseAnimation.m */; };
 		F07CDC9437595AE23BC301D283F0BC2D /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */; };
 		F799F0B224CBF7DE9F63B006D6B847CD /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */; };
 		F8718466D39017B5AA1A3B8E27067E41 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */; };
@@ -70,14 +67,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		521D9DBCD1676816B50295A2B7316CA7 /* PBXContainerItemProxy */ = {
+		A1E45B5BB31C7FCA07177A49DE3FCA33 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7761D6457FC86795C59BCFDF08A7CA36;
 			remoteInfo = JHGrandPopupView;
 		};
-		7AC7C451DCA557B5BB25A4CC0971BBFA /* PBXContainerItemProxy */ = {
+		ACA3AB269E69803AB7C6A164CA5EEBFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -88,99 +85,87 @@
 
 /* Begin PBXFileReference section */
 		0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		01C16F459329573F5A3D1E0CDDB661B6 /* JHGrandPopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JHGrandPopupView.modulemap; sourceTree = "<group>"; };
-		08CB534DDF82F43F35BCC992533B620E /* JHGrandPopupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupViewController.m; path = JHGrandPopupView/JHGrandPopupViewController.m; sourceTree = "<group>"; };
+		078BF127F0E551093C882DED934B7F9E /* JHGrandPopupViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupViewController.h; path = JHGrandPopupView/JHGrandPopupViewController.h; sourceTree = "<group>"; };
 		09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		148AB966037468024B5B1E2D3F554653 /* JHGrandPopupFadeOutAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupFadeOutAnimation.m; path = JHGrandPopupView/JHGrandPopupFadeOutAnimation.m; sourceTree = "<group>"; };
-		1B1C50BEBDF5E554FED38F4D09403A1B /* JHGrandPopupFadeInAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupFadeInAnimation.m; path = JHGrandPopupView/JHGrandPopupFadeInAnimation.m; sourceTree = "<group>"; };
 		1E22A51751B0E59AFD64633A83A5463F /* Pods-JHGrandPopupViewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JHGrandPopupViewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		23C0C3CB057C45D789125CF45423F3F2 /* JHGrandPopupView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JHGrandPopupView-prefix.pch"; sourceTree = "<group>"; };
-		23EDA1A1C8240CBB9FF0FAC74278D829 /* JHGrandPopupView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JHGrandPopupView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		240AFA001B8E4AB8D443A88A37114189 /* JHGrandPopupBaseAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupBaseAnimation.m; path = JHGrandPopupView/JHGrandPopupBaseAnimation.m; sourceTree = "<group>"; };
 		250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		25A86139138080F0AC166BC57080E17F /* JHGrandPopupPresentAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupPresentAnimation.h; path = JHGrandPopupView/JHGrandPopupPresentAnimation.h; sourceTree = "<group>"; };
+		276265CA07B123519406018B97BFE0F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
-		2EF86547079240C1EB7BCB8B9937E041 /* JHGrandPopupView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JHGrandPopupView-Info.plist"; sourceTree = "<group>"; };
+		349ED937A7CC09EB4E59FA0434C3E953 /* JHGrandPopupView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JHGrandPopupView.release.xcconfig; sourceTree = "<group>"; };
 		3806C1035233F152EDCFCB03A4E76A8D /* Pods-JHGrandPopupViewDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JHGrandPopupViewDemo.modulemap"; sourceTree = "<group>"; };
+		381DB0EA7A6A79BC9FC8624915F0784C /* JHGrandPopupView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JHGrandPopupView-dummy.m"; sourceTree = "<group>"; };
 		391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
 		3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		41020A9ED4BC45EB2C7591762BDBAE2B /* JHGrandPopupView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JHGrandPopupView-Info.plist"; sourceTree = "<group>"; };
 		464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		52ED8DF71D6D9F044F1ED6E9A37D8716 /* JHGrandPopupFadeAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupFadeAnimation.m; path = JHGrandPopupView/JHGrandPopupFadeAnimation.m; sourceTree = "<group>"; };
 		549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		643263EDB054C79527A0790767372CC7 /* Pods_JHGrandPopupViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHGrandPopupViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65D99FC113122F082BF457937ED41DE4 /* JHGrandPopupPresentOutAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupPresentOutAnimation.h; path = JHGrandPopupView/JHGrandPopupPresentOutAnimation.h; sourceTree = "<group>"; };
+		5BC87D69B12B83FA0B084A3801ABAA55 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		643263EDB054C79527A0790767372CC7 /* Pods-JHGrandPopupViewDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JHGrandPopupViewDemo"; path = Pods_JHGrandPopupViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
-		730450B8BDE90182CD6A41283B93F90C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		78DC230F5D71C6339310F9CE7F9BFCE5 /* Pods-JHGrandPopupViewDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JHGrandPopupViewDemo-umbrella.h"; sourceTree = "<group>"; };
 		7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
 		7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		7C22E3CB0BFAAF6965476E2A9C6D26DE /* JHGrandPopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JHGrandPopupView-umbrella.h"; sourceTree = "<group>"; };
 		7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		7D96252FD3E3825E9509CD6E115464BE /* Pods-JHGrandPopupViewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JHGrandPopupViewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		811BCA33E3646648E924F57BEE003EC5 /* JHGrandPopupView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JHGrandPopupView.release.xcconfig; sourceTree = "<group>"; };
+		7E60D422A066699C36234CCCD55B0D12 /* JHGrandPopupView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JHGrandPopupView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		81631744B510C0080E27A4866CDB1727 /* Pods-JHGrandPopupViewDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JHGrandPopupViewDemo-Info.plist"; sourceTree = "<group>"; };
 		8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		81CCFE0BE0596F26757E23EADDC46617 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8853B4F7FAF9041A339E7B04C179E527 /* JHGrandPopupBaseAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupBaseAnimation.m; path = JHGrandPopupView/JHGrandPopupBaseAnimation.m; sourceTree = "<group>"; };
+		88DB4BBEC520BDA4E982B6D6A58DBD99 /* JHGrandPopupView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JHGrandPopupView.debug.xcconfig; sourceTree = "<group>"; };
 		91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
 		91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
-		96BFA42BF6FC6A75AAB858E95D9E8B61 /* JHGrandPopupViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupViewController.h; path = JHGrandPopupView/JHGrandPopupViewController.h; sourceTree = "<group>"; };
+		943F43A87E2FA657A2D7082A5F06F0DF /* JHGrandPopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JHGrandPopupView.modulemap; sourceTree = "<group>"; };
 		9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
-		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BEA0135036699BB5B816DEDE9EB32C1 /* JHGrandPopupView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupView.h; path = JHGrandPopupView/JHGrandPopupView.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C84ECFB3383E9FC9AFF87D40E599FB6 /* JHGrandPopupBaseAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupBaseAnimation.h; path = JHGrandPopupView/JHGrandPopupBaseAnimation.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E1D5122857390DE0B8D68B74E84D0B0 /* JHGrandPopupView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JHGrandPopupView-prefix.pch"; sourceTree = "<group>"; };
 		A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
-		A2836EAF98686E721C370BE4E98F2CD7 /* JHGrandPopupView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JHGrandPopupView-dummy.m"; sourceTree = "<group>"; };
 		A2B0DA20CD42C83B89D4884252CFBC8C /* Pods-JHGrandPopupViewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JHGrandPopupViewDemo-frameworks.sh"; sourceTree = "<group>"; };
 		A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
-		A54AB62BCFF1D9CFAF57378EDD4EE2C5 /* JHGrandPopupPresentInAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupPresentInAnimation.h; path = JHGrandPopupView/JHGrandPopupPresentInAnimation.h; sourceTree = "<group>"; };
 		A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
-		A9CF3BC82B5C5733CA07503592529188 /* JHGrandPopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JHGrandPopupView-umbrella.h"; sourceTree = "<group>"; };
-		B351ADE6580E16B1E2D0DFFDB3FA1825 /* JHGrandPopupPresentInAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupPresentInAnimation.m; path = JHGrandPopupView/JHGrandPopupPresentInAnimation.m; sourceTree = "<group>"; };
+		AA0492B8933224F431680A32863F9043 /* JHGrandPopupView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupView.h; path = JHGrandPopupView/JHGrandPopupView.h; sourceTree = "<group>"; };
+		B654BC56701D5AF23FDD62BB30144855 /* JHGrandPopupPresentAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupPresentAnimation.m; path = JHGrandPopupView/JHGrandPopupPresentAnimation.m; sourceTree = "<group>"; };
+		B6A8BE86A3D231FBC324379D89824987 /* JHGrandPopupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupViewController.m; path = JHGrandPopupView/JHGrandPopupViewController.m; sourceTree = "<group>"; };
 		BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
-		C0BB32881BA68E1F0570CD91C07DFAEC /* JHGrandPopupBaseAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupBaseAnimation.h; path = JHGrandPopupView/JHGrandPopupBaseAnimation.h; sourceTree = "<group>"; };
 		C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		C76805A0A2C65EDCE3F462B051F99DCA /* JHGrandPopupFadeOutAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupFadeOutAnimation.h; path = JHGrandPopupView/JHGrandPopupFadeOutAnimation.h; sourceTree = "<group>"; };
 		CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		D3A85D2841328B4B256BE51D4D5BDC37 /* JHGrandPopupFadeAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupFadeAnimation.h; path = JHGrandPopupView/JHGrandPopupFadeAnimation.h; sourceTree = "<group>"; };
 		D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
-		D74DBED2519E96BC4B635C5F20F5F870 /* JHGrandPopupView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JHGrandPopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74DBED2519E96BC4B635C5F20F5F870 /* JHGrandPopupView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JHGrandPopupView; path = JHGrandPopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA89116506666960D3B4C0709D85C1BE /* Pods-JHGrandPopupViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JHGrandPopupViewDemo-dummy.m"; sourceTree = "<group>"; };
 		E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
-		E1EC76D1A0060315BDAE70A19BD7E428 /* JHGrandPopupPresentOutAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupPresentOutAnimation.m; path = JHGrandPopupView/JHGrandPopupPresentOutAnimation.m; sourceTree = "<group>"; };
 		E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		EAEE33FB6219095C9BE099D9951EF913 /* JHGrandPopupFadeInAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupFadeInAnimation.h; path = JHGrandPopupView/JHGrandPopupFadeInAnimation.h; sourceTree = "<group>"; };
+		EC74C0D305451A9EBFC7B44EEB8CEE33 /* JHGrandPopupEnumDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupEnumDefine.h; path = JHGrandPopupView/JHGrandPopupEnumDefine.h; sourceTree = "<group>"; };
 		ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		EFDFCC1934522771D4A55EA5D7698416 /* JHGrandPopupView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupView.m; path = JHGrandPopupView/JHGrandPopupView.m; sourceTree = "<group>"; };
 		F01B2EEEA6B9C6E1CCC291B6CED76DDF /* Pods-JHGrandPopupViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JHGrandPopupViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		F6AF69567DB5D870C4E1413896BFDD4E /* JHGrandPopupView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupView.m; path = JHGrandPopupView/JHGrandPopupView.m; sourceTree = "<group>"; };
 		F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		F824CE12EDA97B3C81736468945F7046 /* JHGrandPopupView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JHGrandPopupView.debug.xcconfig; sourceTree = "<group>"; };
 		FC5127CB4C4B4FC079A045881013A556 /* Pods-JHGrandPopupViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JHGrandPopupViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7BD4836CF4D744ACAE84ECE9498546D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B0D3ECCF62832102A03B82C08BD2FEA /* Foundation.framework in Frameworks */,
-				37775A285508CEF9638636C7F4EC587A /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A087DCAE37E1CAE6BF362F6AB7EC4738 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +179,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B642D91C6B71AFF46135FCCB99303DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5657E8B098D6189A209DC784F8812E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22AE2CACD5431C1465058919627E4AA /* Foundation.framework in Frameworks */,
+				756BE4BA137872F7C21F042F3DF6EF1F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,37 +211,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		221DF8E610ACEE8D5CAC30F25485995D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				01C16F459329573F5A3D1E0CDDB661B6 /* JHGrandPopupView.modulemap */,
-				A2836EAF98686E721C370BE4E98F2CD7 /* JHGrandPopupView-dummy.m */,
-				2EF86547079240C1EB7BCB8B9937E041 /* JHGrandPopupView-Info.plist */,
-				23C0C3CB057C45D789125CF45423F3F2 /* JHGrandPopupView-prefix.pch */,
-				A9CF3BC82B5C5733CA07503592529188 /* JHGrandPopupView-umbrella.h */,
-				F824CE12EDA97B3C81736468945F7046 /* JHGrandPopupView.debug.xcconfig */,
-				811BCA33E3646648E924F57BEE003EC5 /* JHGrandPopupView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "JHGrandPopupViewDemo/Pods/Target Support Files/JHGrandPopupView";
-			sourceTree = "<group>";
-		};
 		34867AC5D42F2DD16FDA2B96C83E3A9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D74DBED2519E96BC4B635C5F20F5F870 /* JHGrandPopupView.framework */,
-				643263EDB054C79527A0790767372CC7 /* Pods_JHGrandPopupViewDemo.framework */,
-				979486118B3E90C08386079D57962701 /* SnapKit.framework */,
+				D74DBED2519E96BC4B635C5F20F5F870 /* JHGrandPopupView */,
+				643263EDB054C79527A0790767372CC7 /* Pods-JHGrandPopupViewDemo */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		47720871D2B5D126FEF92D23C45621B8 /* Development Pods */ = {
+		5A1BED2DD6F8CC3920FD33BC5F1E444F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CA64D7CA92437A33FCCE92FB4B5E34E9 /* JHGrandPopupView */,
+				943F43A87E2FA657A2D7082A5F06F0DF /* JHGrandPopupView.modulemap */,
+				381DB0EA7A6A79BC9FC8624915F0784C /* JHGrandPopupView-dummy.m */,
+				41020A9ED4BC45EB2C7591762BDBAE2B /* JHGrandPopupView-Info.plist */,
+				9E1D5122857390DE0B8D68B74E84D0B0 /* JHGrandPopupView-prefix.pch */,
+				7C22E3CB0BFAAF6965476E2A9C6D26DE /* JHGrandPopupView-umbrella.h */,
+				88DB4BBEC520BDA4E982B6D6A58DBD99 /* JHGrandPopupView.debug.xcconfig */,
+				349ED937A7CC09EB4E59FA0434C3E953 /* JHGrandPopupView.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "JHGrandPopupViewDemo/Pods/Target Support Files/JHGrandPopupView";
 			sourceTree = "<group>";
 		};
 		7F02E3862C6E84203E8324D9D0088797 /* SnapKit */ = {
@@ -291,6 +277,7 @@
 				6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */,
 				843EFF0C650682C304D518A9092EE9FD /* Support Files */,
 			);
+			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -307,6 +294,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		B7A0D663E4C1A24A8F1C57DB2F2F7BF1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CACF104E30AE09D0E2DE65B6F4DD7367 /* JHGrandPopupView */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		BA22F08D059965C9A09F78196176CEDB /* Pods */ = {
@@ -334,35 +329,32 @@
 			path = "Target Support Files/Pods-JHGrandPopupViewDemo";
 			sourceTree = "<group>";
 		};
-		C7141CE338B71B58A224707A8EBDB198 /* Pod */ = {
+		C84866A2B05F5AD9E4169F20FB2241CD /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				23EDA1A1C8240CBB9FF0FAC74278D829 /* JHGrandPopupView.podspec */,
-				730450B8BDE90182CD6A41283B93F90C /* LICENSE */,
-				81CCFE0BE0596F26757E23EADDC46617 /* README.md */,
+				7E60D422A066699C36234CCCD55B0D12 /* JHGrandPopupView.podspec */,
+				5BC87D69B12B83FA0B084A3801ABAA55 /* LICENSE */,
+				276265CA07B123519406018B97BFE0F5 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		CA64D7CA92437A33FCCE92FB4B5E34E9 /* JHGrandPopupView */ = {
+		CACF104E30AE09D0E2DE65B6F4DD7367 /* JHGrandPopupView */ = {
 			isa = PBXGroup;
 			children = (
-				C0BB32881BA68E1F0570CD91C07DFAEC /* JHGrandPopupBaseAnimation.h */,
-				240AFA001B8E4AB8D443A88A37114189 /* JHGrandPopupBaseAnimation.m */,
-				EAEE33FB6219095C9BE099D9951EF913 /* JHGrandPopupFadeInAnimation.h */,
-				1B1C50BEBDF5E554FED38F4D09403A1B /* JHGrandPopupFadeInAnimation.m */,
-				C76805A0A2C65EDCE3F462B051F99DCA /* JHGrandPopupFadeOutAnimation.h */,
-				148AB966037468024B5B1E2D3F554653 /* JHGrandPopupFadeOutAnimation.m */,
-				A54AB62BCFF1D9CFAF57378EDD4EE2C5 /* JHGrandPopupPresentInAnimation.h */,
-				B351ADE6580E16B1E2D0DFFDB3FA1825 /* JHGrandPopupPresentInAnimation.m */,
-				65D99FC113122F082BF457937ED41DE4 /* JHGrandPopupPresentOutAnimation.h */,
-				E1EC76D1A0060315BDAE70A19BD7E428 /* JHGrandPopupPresentOutAnimation.m */,
-				9BEA0135036699BB5B816DEDE9EB32C1 /* JHGrandPopupView.h */,
-				EFDFCC1934522771D4A55EA5D7698416 /* JHGrandPopupView.m */,
-				96BFA42BF6FC6A75AAB858E95D9E8B61 /* JHGrandPopupViewController.h */,
-				08CB534DDF82F43F35BCC992533B620E /* JHGrandPopupViewController.m */,
-				C7141CE338B71B58A224707A8EBDB198 /* Pod */,
-				221DF8E610ACEE8D5CAC30F25485995D /* Support Files */,
+				9C84ECFB3383E9FC9AFF87D40E599FB6 /* JHGrandPopupBaseAnimation.h */,
+				8853B4F7FAF9041A339E7B04C179E527 /* JHGrandPopupBaseAnimation.m */,
+				EC74C0D305451A9EBFC7B44EEB8CEE33 /* JHGrandPopupEnumDefine.h */,
+				D3A85D2841328B4B256BE51D4D5BDC37 /* JHGrandPopupFadeAnimation.h */,
+				52ED8DF71D6D9F044F1ED6E9A37D8716 /* JHGrandPopupFadeAnimation.m */,
+				25A86139138080F0AC166BC57080E17F /* JHGrandPopupPresentAnimation.h */,
+				B654BC56701D5AF23FDD62BB30144855 /* JHGrandPopupPresentAnimation.m */,
+				AA0492B8933224F431680A32863F9043 /* JHGrandPopupView.h */,
+				F6AF69567DB5D870C4E1413896BFDD4E /* JHGrandPopupView.m */,
+				078BF127F0E551093C882DED934B7F9E /* JHGrandPopupViewController.h */,
+				B6A8BE86A3D231FBC324379D89824987 /* JHGrandPopupViewController.m */,
+				C84866A2B05F5AD9E4169F20FB2241CD /* Pod */,
+				5A1BED2DD6F8CC3920FD33BC5F1E444F /* Support Files */,
 			);
 			name = JHGrandPopupView;
 			path = ../..;
@@ -372,7 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				47720871D2B5D126FEF92D23C45621B8 /* Development Pods */,
+				B7A0D663E4C1A24A8F1C57DB2F2F7BF1 /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				BA22F08D059965C9A09F78196176CEDB /* Pods */,
 				34867AC5D42F2DD16FDA2B96C83E3A9C /* Products */,
@@ -391,26 +383,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1490A33983A4F34FC2D7DF9B85342AEB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C4D85BDD17A69C0D2DFFD39F916BF80 /* JHGrandPopupBaseAnimation.h in Headers */,
-				CDF42BE62AAC19E15DC3F7721DAFF1A0 /* JHGrandPopupFadeInAnimation.h in Headers */,
-				62679A7269F6D044A99EFED8DBBB2E8C /* JHGrandPopupFadeOutAnimation.h in Headers */,
-				BEEC30B929AA83737AD61304226B7B73 /* JHGrandPopupPresentInAnimation.h in Headers */,
-				4F39512BDB668A32B7CA980FF0CC82D6 /* JHGrandPopupPresentOutAnimation.h in Headers */,
-				129130C0BB3D418E0DC0FF11C6F12D61 /* JHGrandPopupView.h in Headers */,
-				11F0FA824FCA15E1743CC42EA69EF6DB /* JHGrandPopupView-umbrella.h in Headers */,
-				A6E21EDB3E1C2CE9FEA84528FCA2E6CA /* JHGrandPopupViewController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6BB80820722BB2685B5BEA720F92D3CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3E1BA9D21EC7CB1A78C5D09C5596B5BA /* Pods-JHGrandPopupViewDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A52C5E09D345049F9F3D75CDA0CAEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A36699B55238DC3026C3689EE2CA91 /* JHGrandPopupBaseAnimation.h in Headers */,
+				A3E67EC68671ABC79547316705CB6E63 /* JHGrandPopupEnumDefine.h in Headers */,
+				77F996F9DB0E1F99138A69908C8422ED /* JHGrandPopupFadeAnimation.h in Headers */,
+				6C72046C91A1F2405F26806F5F912B90 /* JHGrandPopupPresentAnimation.h in Headers */,
+				5ECD2C12E2F06A7723202663C95EC91E /* JHGrandPopupView.h in Headers */,
+				A5FB126AAEE062BC7576EE9CD9412700 /* JHGrandPopupView-umbrella.h in Headers */,
+				0214211330D207EBFA1B28A98A6DAAB8 /* JHGrandPopupViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +431,7 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
-			productReference = 979486118B3E90C08386079D57962701 /* SnapKit.framework */;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
 			productType = "com.apple.product-type.framework";
 		};
 		54289A69C6B4E62866F046B10469AD0A /* Pods-JHGrandPopupViewDemo */ = {
@@ -455,22 +446,22 @@
 			buildRules = (
 			);
 			dependencies = (
-				4AE743EC2088F3EE50FCFD63ACB0DDBC /* PBXTargetDependency */,
-				40D23A25E589903F01279E97819FC640 /* PBXTargetDependency */,
+				0775EB217886C73E0DDD8CCDF1F866D5 /* PBXTargetDependency */,
+				361B035B9DF935CE9C4B1072AC129759 /* PBXTargetDependency */,
 			);
 			name = "Pods-JHGrandPopupViewDemo";
 			productName = Pods_JHGrandPopupViewDemo;
-			productReference = 643263EDB054C79527A0790767372CC7 /* Pods_JHGrandPopupViewDemo.framework */;
+			productReference = 643263EDB054C79527A0790767372CC7 /* Pods-JHGrandPopupViewDemo */;
 			productType = "com.apple.product-type.framework";
 		};
 		7761D6457FC86795C59BCFDF08A7CA36 /* JHGrandPopupView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14E48D5430C617CC8EBF37E0F66BAD8F /* Build configuration list for PBXNativeTarget "JHGrandPopupView" */;
+			buildConfigurationList = EE7BDA291EEF74B166E7F917EFFD1AB7 /* Build configuration list for PBXNativeTarget "JHGrandPopupView" */;
 			buildPhases = (
-				1490A33983A4F34FC2D7DF9B85342AEB /* Headers */,
-				14A53B1C65F30AC8BD62720D6109623F /* Sources */,
-				7BD4836CF4D744ACAE84ECE9498546D6 /* Frameworks */,
-				467B08A2EF99845E1A3D38D851C46C60 /* Resources */,
+				C1A52C5E09D345049F9F3D75CDA0CAEB /* Headers */,
+				F8E51C14255F531B4509C81DF7AD1E40 /* Sources */,
+				E5657E8B098D6189A209DC784F8812E4 /* Frameworks */,
+				257ED3625A3371A9ACB33A9F0BC85820 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -478,7 +469,7 @@
 			);
 			name = JHGrandPopupView;
 			productName = JHGrandPopupView;
-			productReference = D74DBED2519E96BC4B635C5F20F5F870 /* JHGrandPopupView.framework */;
+			productReference = D74DBED2519E96BC4B635C5F20F5F870 /* JHGrandPopupView */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -499,6 +490,8 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 34867AC5D42F2DD16FDA2B96C83E3A9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -518,7 +511,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		467B08A2EF99845E1A3D38D851C46C60 /* Resources */ = {
+		257ED3625A3371A9ACB33A9F0BC85820 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -579,21 +572,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14A53B1C65F30AC8BD62720D6109623F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6D0AE32BBE8A4A29902FF91DDEF70E1 /* JHGrandPopupBaseAnimation.m in Sources */,
-				2FCB054CEB6F335B6AA30A8505E81FF8 /* JHGrandPopupFadeInAnimation.m in Sources */,
-				BF14FBA08A9A638B50D21321609DA564 /* JHGrandPopupFadeOutAnimation.m in Sources */,
-				ABB9B642CA5715B5E27644CC1F01143A /* JHGrandPopupPresentInAnimation.m in Sources */,
-				4CE25CEF56E649904884C2435752148F /* JHGrandPopupPresentOutAnimation.m in Sources */,
-				C4A58CBE477CC3450A9616C9A34AA4D3 /* JHGrandPopupView.m in Sources */,
-				0996C526F9CEE31AB1F241172E1D8F7F /* JHGrandPopupView-dummy.m in Sources */,
-				E0039C9D5248C3E2BECA8FFC76C0C48D /* JHGrandPopupViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AFDD96315CA123EC6C1C9E93C596EAC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -602,24 +580,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8E51C14255F531B4509C81DF7AD1E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7923C81B69D5DE0C931B48CF813ACD0E /* JHGrandPopupBaseAnimation.m in Sources */,
+				C7AD46C367B33682629AC5247E4F6301 /* JHGrandPopupFadeAnimation.m in Sources */,
+				41362881EB61F452F8373DEC9B660549 /* JHGrandPopupPresentAnimation.m in Sources */,
+				BDD93139B3450EBA9A153DB79F8D58E6 /* JHGrandPopupView.m in Sources */,
+				D9F147BFD2823E329CE9C78B3D18C9C3 /* JHGrandPopupView-dummy.m in Sources */,
+				8C37FCE835D64155DCEBC31A65D704F5 /* JHGrandPopupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		40D23A25E589903F01279E97819FC640 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnapKit;
-			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = 7AC7C451DCA557B5BB25A4CC0971BBFA /* PBXContainerItemProxy */;
-		};
-		4AE743EC2088F3EE50FCFD63ACB0DDBC /* PBXTargetDependency */ = {
+		0775EB217886C73E0DDD8CCDF1F866D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JHGrandPopupView;
 			target = 7761D6457FC86795C59BCFDF08A7CA36 /* JHGrandPopupView */;
-			targetProxy = 521D9DBCD1676816B50295A2B7316CA7 /* PBXContainerItemProxy */;
+			targetProxy = A1E45B5BB31C7FCA07177A49DE3FCA33 /* PBXContainerItemProxy */;
+		};
+		361B035B9DF935CE9C4B1072AC129759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = ACA3AB269E69803AB7C6A164CA5EEBFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		058CEAE56AF11B4FC689ACC2E60C354B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DB4BBEC520BDA4E982B6D6A58DBD99 /* JHGrandPopupView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/JHGrandPopupView/JHGrandPopupView-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/JHGrandPopupView/JHGrandPopupView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JHGrandPopupView/JHGrandPopupView.modulemap";
+				PRODUCT_MODULE_NAME = JHGrandPopupView;
+				PRODUCT_NAME = JHGrandPopupView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1B2AEBD20CAA9C83B9F0EABBFB294FE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */;
@@ -659,48 +689,9 @@
 			};
 			name = Debug;
 		};
-		2895588D6584D957570966E06D5FDBE0 /* Debug */ = {
+		22AE8DBE3AC1C1F936BE080AB041CA52 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC5127CB4C4B4FC079A045881013A556 /* Pods-JHGrandPopupViewDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-JHGrandPopupViewDemo/Pods-JHGrandPopupViewDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JHGrandPopupViewDemo/Pods-JHGrandPopupViewDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		36D36F418C226394E62BB4DF1F670991 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 811BCA33E3646648E924F57BEE003EC5 /* JHGrandPopupView.release.xcconfig */;
+			baseConfigurationReference = 349ED937A7CC09EB4E59FA0434C3E953 /* JHGrandPopupView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -738,10 +729,11 @@
 			};
 			name = Release;
 		};
-		537329F5F02D5E5BC7AF80829E5E6B21 /* Debug */ = {
+		2895588D6584D957570966E06D5FDBE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F824CE12EDA97B3C81736468945F7046 /* JHGrandPopupView.debug.xcconfig */;
+			baseConfigurationReference = FC5127CB4C4B4FC079A045881013A556 /* Pods-JHGrandPopupViewDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -753,9 +745,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/JHGrandPopupView/JHGrandPopupView-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/JHGrandPopupView/JHGrandPopupView-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-JHGrandPopupViewDemo/Pods-JHGrandPopupViewDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -763,14 +753,15 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/JHGrandPopupView/JHGrandPopupView.modulemap";
-				PRODUCT_MODULE_NAME = JHGrandPopupView;
-				PRODUCT_NAME = JHGrandPopupView;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JHGrandPopupViewDemo/Pods-JHGrandPopupViewDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -988,15 +979,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14E48D5430C617CC8EBF37E0F66BAD8F /* Build configuration list for PBXNativeTarget "JHGrandPopupView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				537329F5F02D5E5BC7AF80829E5E6B21 /* Debug */,
-				36D36F418C226394E62BB4DF1F670991 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1011,6 +993,15 @@
 			buildConfigurations = (
 				1B2AEBD20CAA9C83B9F0EABBFB294FE4 /* Debug */,
 				FB3E04FEDA3931296E418DAB2F5A43B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE7BDA291EEF74B166E7F917EFFD1AB7 /* Build configuration list for PBXNativeTarget "JHGrandPopupView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				058CEAE56AF11B4FC689ACC2E60C354B /* Debug */,
+				22AE8DBE3AC1C1F936BE080AB041CA52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

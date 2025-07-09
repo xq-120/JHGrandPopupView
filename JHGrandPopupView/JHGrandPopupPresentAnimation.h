@@ -1,5 +1,5 @@
 //
-//  JHGrandPopupFadeAnimation.h
+//  JHGrandPopupPresentAnimation.h
 //  Pods-JHGrandPopupViewDemo
 //
 //  Created by xuequan on 2022/7/16.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JHGrandPopupFadeInAnimation : JHGrandPopupBaseAnimation
+@interface JHGrandPopupPresentAnimation : JHGrandPopupBaseAnimation
 
 
 @end
