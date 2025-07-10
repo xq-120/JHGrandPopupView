@@ -169,6 +169,21 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
             }
             dataList.append(item)
         }
+        
+        do {
+            let item = FDEItemModel.init()
+            item.title = "通用弹窗"
+            item.actionBlk = { [weak self] in
+                guard let self = self else {return}
+                let popupView = JHAlertView.init()
+                popupView.titleLabel.text = "温馨提示"
+                popupView.contentLabel.text = "站在车外，秦沐抬起头，仰望着那片漆黑一片、没有丝毫星光点缀的夜空。她静静地凝视着这片无尽的黑暗。"
+                popupView.buttonLayoutStyle = .vertical
+                popupView.onlyShowLeftBtn = false
+                popupView.show(in: nil, animated: true, completion: nil)
+            }
+            dataList.append(item)
+        }
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

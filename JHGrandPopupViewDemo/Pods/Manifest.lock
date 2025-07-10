@@ -1,5 +1,7 @@
 PODS:
-  - JHGrandPopupView (1.5.0)
+  - JHGrandPopupView (1.5.0):
+    - Masonry (~> 1.1.0)
+  - Masonry (1.1.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
@@ -8,6 +10,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Masonry
     - SnapKit
 
 EXTERNAL SOURCES:
@@ -15,7 +18,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JHGrandPopupView: ba0aa39cbf0ad279270a89fe78193c3dba5cc98c
+  JHGrandPopupView: 781dbaa91f7684bdcd5cc78f69d0899e018c1b13
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
 PODFILE CHECKSUM: 9a2fb87124cde4116fa142f7203342ed627e36e7

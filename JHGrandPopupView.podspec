@@ -20,7 +20,9 @@ Pod::Spec.new do |spec|
   spec.source_files = "JHGrandPopupView/**/*.{h,m}"
 
   spec.frameworks   = "Foundation", "UIKit"
-
+  
   spec.requires_arc = true
+  
+  spec.dependency "Masonry", '~> 1.1.0'
 
 end

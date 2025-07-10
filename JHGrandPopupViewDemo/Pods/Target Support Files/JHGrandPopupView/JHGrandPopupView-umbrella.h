@@ -14,6 +14,7 @@
 #import "JHGrandPopupEnumDefine.h"
 #import "JHGrandPopupFadeAnimation.h"
 #import "JHGrandPopupPresentAnimation.h"
+#import "JHAlertView.h"
 #import "JHGrandPopupView.h"
 #import "JHGrandPopupViewController.h"
 
