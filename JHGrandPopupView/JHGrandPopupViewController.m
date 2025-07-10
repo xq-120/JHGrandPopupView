@@ -26,6 +26,18 @@
     return self;
 }
 
+//- (UIStatusBarStyle)preferredStatusBarStyle {
+//    if (@available(iOS 13.0, *)) {
+//        return UIStatusBarStyleDarkContent;
+//    } else {
+//        return UIStatusBarStyleDefault;
+//    }
+//}
+//
+//- (BOOL)modalPresentationCapturesStatusBarAppearance {
+//    return YES;
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

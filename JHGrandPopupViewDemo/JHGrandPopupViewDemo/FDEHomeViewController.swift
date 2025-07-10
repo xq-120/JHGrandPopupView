@@ -204,5 +204,13 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
         let item = dataList[indexPath.row]
         item.actionBlk?()
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        if #available(iOS 13.0, *) { //13.0+不能设置为default
+            return .darkContent
+        } else {
+            return .default
+        }
+    }
 }
 
