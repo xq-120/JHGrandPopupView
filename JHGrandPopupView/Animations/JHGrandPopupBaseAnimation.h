@@ -6,8 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JHGrandPopupView.h"
-#import "JHGrandPopupViewController.h"
+#import "JHGrandPopupView/JHGrandPopupDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

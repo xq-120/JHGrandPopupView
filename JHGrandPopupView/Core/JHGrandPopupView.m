@@ -6,7 +6,7 @@
 //
 
 #import "JHGrandPopupView.h"
-#import "JHGrandPopupFadeAnimation.h"
+//#import "JHGrandPopupFadeAnimation.h"
 #import "JHGrandPopupUtils.h"
 
 @interface JHGrandPopupView ()
@@ -31,7 +31,10 @@
 }
 
 - (void)_commonInit {
-    self.animator = JHGrandPopupFadeAnimation.new;
+//    self.animator = [[JHGrandPopupFadeAnimation alloc] init];
+    
+    Class fadeCls = NSClassFromString(@"JHGrandPopupFadeAnimation");
+    self.animator = [[fadeCls alloc] init];
     
     _identify = NSStringFromClass(self.class);
     

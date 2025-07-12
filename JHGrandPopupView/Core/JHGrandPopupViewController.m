@@ -6,7 +6,7 @@
 //
 
 #import "JHGrandPopupViewController.h"
-#import "JHGrandPopupFadeAnimation.h"
+//#import "JHGrandPopupFadeAnimation.h"
 #import "JHGrandPopupUtils.h"
 
 @interface JHGrandPopupViewController ()<UIViewControllerTransitioningDelegate>
@@ -22,7 +22,11 @@
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
         _shouldDismissOnTouchBackView = NO;
-        _animator = [[JHGrandPopupFadeAnimation alloc] init];
+//        _animator = [[JHGrandPopupFadeAnimation alloc] init];
+        
+        Class fadeCls = NSClassFromString(@"JHGrandPopupFadeAnimation");
+        _animator = [[fadeCls alloc] init];
+        
         _identify = NSStringFromClass(self.class);
     }
     return self;

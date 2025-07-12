@@ -1,8 +1,16 @@
 PODS:
   - JHGrandPopupView (1.6.0):
     - JHGrandPopupView/Animations (= 1.6.0)
+    - JHGrandPopupView/Core (= 1.6.0)
+    - JHGrandPopupView/Plugins (= 1.6.0)
     - Masonry (~> 1.1.0)
   - JHGrandPopupView/Animations (1.6.0):
+    - JHGrandPopupView/Core
+    - Masonry (~> 1.1.0)
+  - JHGrandPopupView/Core (1.6.0):
+    - Masonry (~> 1.1.0)
+  - JHGrandPopupView/Plugins (1.6.0):
+    - JHGrandPopupView/Core
     - Masonry (~> 1.1.0)
   - Masonry (1.1.0)
   - SnapKit (5.0.1)
@@ -21,10 +29,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JHGrandPopupView: 6b1656bf0df40f140d8a29e4d6f7bd46c403c14b
+  JHGrandPopupView: e4c85c3a7be238bfdca973d7804e359886682e98
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 4b2c04ed581eac248251af8fa55fbec6065ecfa7
+PODFILE CHECKSUM: fbe90fcbf71859a97761fb4d16a11dc48e97be6f
 
 COCOAPODS: 1.16.2

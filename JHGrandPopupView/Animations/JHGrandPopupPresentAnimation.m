@@ -6,6 +6,7 @@
 //
 
 #import "JHGrandPopupPresentAnimation.h"
+#import "JHGrandPopupView.h"
 #import "JHGrandPopupViewController.h"
 
 @implementation JHGrandPopupPresentAnimation

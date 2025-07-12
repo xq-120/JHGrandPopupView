@@ -6,7 +6,8 @@
 //
 
 #import "JHGrandPopupFadeAnimation.h"
-#import <UIKit/UIKit.h>
+#import "JHGrandPopupView.h"
+#import "JHGrandPopupViewController.h"
 
 @implementation JHGrandPopupFadeAnimation
 
