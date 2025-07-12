@@ -7,6 +7,7 @@
 
 #import "JHGrandPopupViewController.h"
 #import "JHGrandPopupFadeAnimation.h"
+#import "JHGrandPopupUtils.h"
 
 @interface JHGrandPopupViewController ()<UIViewControllerTransitioningDelegate>
 
@@ -22,6 +23,7 @@
     if (self) {
         _shouldDismissOnTouchBackView = NO;
         _animator = [[JHGrandPopupFadeAnimation alloc] init];
+        _identify = NSStringFromClass(self.class);
     }
     return self;
 }
@@ -54,6 +56,10 @@
     self.backView.frame = self.view.frame;
 }
 
+- (BOOL)isShowing {
+    return self.view.window != nil;
+}
+
 - (void)showIn:(UIViewController *)viewController completion:(void (^)(void))completion {
     [self showIn:viewController animated:YES completion:completion];
 }
@@ -63,6 +69,9 @@
 }
 
 - (void)showIn:(UIViewController *)viewController isWrapInNavigationController:(BOOL)isWrap animated:(BOOL)animated completion:(void (^)(void))completion {
+    if (viewController == nil) {
+        viewController = [JHGrandPopupUtils topViewController];
+    }
     self.inViewController = viewController;
     UIViewController *presentedViewController = self;
     if (isWrap) {

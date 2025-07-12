@@ -125,7 +125,7 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
                 detail.hidesBottomBarWhenPushed = true
                 popupView?.navigationController?.pushViewController(detail, animated: true)
             }
-            popupView.show(in: self, isWrapInNavigationController: true, animated: true, completion: nil)
+            popupView.show(in: nil, isWrapInNavigationController: true, animated: true, completion: nil)
         }
         dataList.append(item6)
         
@@ -133,7 +133,7 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
         item7.title = "use viewcontroller-底部文本输入弹窗"
         item7.actionBlk = { [weak self] in
             let popupView = JKPublishCommentAlertViewController.init()
-            popupView.show(in: self!, isWrapInNavigationController: false, animated: true)
+            popupView.show(in: nil, isWrapInNavigationController: false, animated: true)
             popupView.textView.becomeFirstResponder()
         }
         dataList.append(item7)
@@ -149,7 +149,7 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
                 self?.navigationController?.pushViewController(detail, animated: true)
             }
             popupView.shouldDismissOnTouchBackView = true
-            popupView.show(in: self, completion: nil)
+            popupView.show(in: nil, completion: nil)
         }
         dataList.append(item8)
         
@@ -165,7 +165,7 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
                     popupView?.navigationController?.pushViewController(detail, animated: true)
                 }
                 popupView.shouldDismissOnTouchBackView = true
-                popupView.show(in: self, isWrapInNavigationController: true, animated: true)
+                popupView.show(in: nil, isWrapInNavigationController: true, animated: true)
             }
             dataList.append(item)
         }

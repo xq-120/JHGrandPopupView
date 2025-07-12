@@ -13,6 +13,8 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        _contentViewCorner = 8.0;
+        
         _topMargin = 30;
         _titleContentMargin = 15;
         _contentBtnMargin = 30;
@@ -35,7 +37,7 @@
 }
 
 - (void)initializeSubviews {
-    self.contentView.layer.cornerRadius = 8.0;
+    self.contentView.layer.cornerRadius = self.contentViewCorner;
     self.contentView.layer.masksToBounds = true;
     
     [self.contentView addSubview:self.titleLabel];

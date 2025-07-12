@@ -10,13 +10,13 @@
 #endif
 #endif
 
+#import "JHAlertView.h"
+#import "JHGrandPopupView.h"
+#import "JHGrandPopupViewController.h"
 #import "JHGrandPopupBaseAnimation.h"
 #import "JHGrandPopupEnumDefine.h"
 #import "JHGrandPopupFadeAnimation.h"
 #import "JHGrandPopupPresentAnimation.h"
-#import "JHAlertView.h"
-#import "JHGrandPopupView.h"
-#import "JHGrandPopupViewController.h"
 
 FOUNDATION_EXPORT double JHGrandPopupViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char JHGrandPopupViewVersionString[];

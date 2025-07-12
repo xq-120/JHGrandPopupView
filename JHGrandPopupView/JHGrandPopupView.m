@@ -7,6 +7,7 @@
 
 #import "JHGrandPopupView.h"
 #import "JHGrandPopupFadeAnimation.h"
+#import "JHGrandPopupUtils.h"
 
 @interface JHGrandPopupView ()
 
@@ -32,6 +33,8 @@
 - (void)_commonInit {
     self.animator = JHGrandPopupFadeAnimation.new;
     
+    _identify = NSStringFromClass(self.class);
+    
     self.backgroundColor = [UIColor clearColor];
     _shouldDismissOnTouchBackView = NO;
     self.backView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
@@ -45,6 +48,10 @@
     [NSLayoutConstraint constraintWithItem:self.backView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0].active = true;
 }
 
+- (BOOL)isShowing {
+    return self.window != nil;
+}
+
 - (void)showWithCompletion:(void (^)(void))completion {
     [self showIn:nil completion:completion];
 }
@@ -55,7 +62,7 @@
 
 - (void)showIn:(UIView *)view animated:(BOOL)animated completion:(void (^)(void))completion {
     if (view == nil) {
-        view = UIApplication.sharedApplication.delegate.window;
+        view = [JHGrandPopupUtils appMainWindow];
     }
     if (CGRectEqualToRect(self.frame, CGRectZero)) {
         self.frame = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height);

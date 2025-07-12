@@ -16,6 +16,8 @@ typedef NS_ENUM(NSInteger, JHAlertViewButtonLayoutStyle) {
 
 @interface JHAlertView : JHGrandPopupView
 
+@property (nonatomic, assign) CGFloat contentViewCorner;
+
 @property (nonatomic, assign) CGFloat topMargin;
 
 @property (nonatomic, assign) CGFloat titleContentMargin;

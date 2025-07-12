@@ -23,10 +23,22 @@ NS_ASSUME_NONNULL_BEGIN
 // 弹窗为UIView
 @interface JHGrandPopupView : UIView
 
+/// 是否正在显示。默认实现为是否被添加到window上。
+@property (nonatomic, assign, readonly) BOOL isShowing;
+
+/// 优先级设置。默认0。
+@property (nonatomic, assign) NSInteger priority;
+
+/// 标识id
+@property (nonatomic, copy) NSString *identify;
+
+/// 弹窗的父视图
 @property (nonatomic, weak, nullable) UIView *inView;
 
+/// 蒙层视图
 @property (nonatomic, strong, readonly) UIView *backView;
 
+/// 点击蒙层时是否关闭弹窗
 @property (nonatomic, assign) BOOL shouldDismissOnTouchBackView;
 
 @property (nonatomic, copy) void (^ _Nullable onTouchBackViewActionBlk)(void);
@@ -53,9 +65,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// animated:YES
 - (void)showIn:(UIView * _Nullable)view completion:(void (^ _Nullable)(void))completion;
 
-/// 在指定view上弹出弹窗。传nil,该弹窗会被添加在主window上。
+/// 在指定view上弹出弹窗。
 /// - Parameters:
-///   - view: 父视图
+///   - view: 父视图.传nil,该弹窗会被添加在app 主window上。
 ///   - animated: 是否动画
 ///   - completion: 显示完成回调
 - (void)showIn:(UIView * _Nullable)view animated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
